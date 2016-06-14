@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+<!-- 格式识别：若为数字高亮识别，将此关闭 -->
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>充值</title>
+<link href="css/reset.css" rel="stylesheet"  />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link href="css/banner.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/page/account.css">
+</head>
+<body>
+<div class="container" id="seclevpage-content">    
+  <nav class="navbar navbar-default navbar-fixed-top top-bar-fixed">
+    <div class="container top-bar">
+      <div class="row item">
+        <div class="col-xs-12 item-box">
+          <a href="wode.html"><i class="fa fa-angle-left"> </i> 返回</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="curr-account">
+  <p>当前账户余额</p>
+  <h1>120.05 <span>元</span></h1>
+</div>
+
+<div class="container form-container">
+  <form action="" class="row formZ">
+    <p>选择支付方式</p>    
+    <label class="col-xs-12 item-fs item-zhi">
+      <span>支付宝支付 <b class="state"> </b></span>
+      <input class="hidden-radio" type="radio" name="zhifu" value="zfb">
+    </label>
+    <label class="col-xs-12 item-fs item-weixin">
+      <span>微信支付 <b class="state"> </b></span>
+      <input class="hidden-radio" type="radio" name="zhifu" value="weixin">
+    </label>
+    <div class="col-xs-12 btn-chongzhi">
+      <button>充值</button>
+    </div>
+    <div class="col-xs-12 btn-tixian">
+      <button>提现</button>
+    </div>
+
+  </form>
+</div>
+
+<script src="js/lib/jquery-1.9.1.min.js"></script>
+<script src="js/lib/jquery.event.drag-1.5.min.js"></script>
+<script src="js/lib/jquery.touchSlider.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script>
+$(function(){
+  (function(){
+    $(".item-fs").each(function(i){      
+      $(this).click(function(){
+        $(".state").removeClass("radio-checked");
+        $(".state").eq(i).addClass("radio-checked");
+      });
+    });
+  })();
+});
+</script>
+</body>
+</html>

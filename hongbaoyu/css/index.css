@@ -1,0 +1,81 @@
+html {
+  font-size: 10px;
+}
+body {
+  background-color: #f3f4f5;
+  overflow: auto;
+}
+.main_visual {
+  overflow: hidden;
+}
+.goods {
+  background-color: #f3f4f5;
+  padding: 20px 10px;
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.jdt {
+  margin-bottom: 0;
+}
+.goods-item {
+  height: 40.625vh;
+  width: 47.5%;
+  margin-right: 2%;
+  margin-bottom: 1vh;
+  padding: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.goods-item .joinNum {
+  text-align: right;
+  margin: 0;
+}
+.goods-item p {
+  font-size: 1.6rem;
+}
+.goods-item span {
+  font-size: 1.7rem;
+  color: #f60f0f;
+}
+.goods-item a {
+  position: relative;
+  left: 46%;
+  margin-left: -23.75%;
+}
+.goods-item img {
+  height: 60%;
+}
+.bottom-bar-fixed {
+  height: 8.7vh;
+  border-top: 2px solid #999;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 0, 0, 0.1) inset;
+}
+.bottom-bar {
+  height: 8.7vh;
+}
+.bottom-bar .item {
+  height: 100%;
+}
+.bottom-bar .bottom-btn {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.btn-hby,
+.btn-yydb,
+.btn-wd {
+  background: #ffffff no-repeat center center;
+  background-size: 66%;
+}
+.btn-hby {
+  background-image: url(../../img/btn_hby_gray.png);
+}
+.btn-yydb {
+  background-image: url(../../img/btn_yydb.png);
+}
+.btn-wd {
+  background-image: url(../../img/btn_wd_gray.png);
+}

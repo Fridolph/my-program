@@ -1,0 +1,50 @@
+.bottom-bar-fixed {
+  height: 8.7vh;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  -webkit-box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16), 0 0 8px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16), 0 0 8px rgba(0, 0, 0, 0.2) inset;
+}
+.bottom-bar {
+  height: 8.7vh;
+}
+.bottom-bar .item {
+  height: 100%;
+}
+.bottom-bar .bottom-btn {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.btn-hby,
+.btn-yydb,
+.btn-wd {
+  background: #ffffff no-repeat center center;
+  background-size: 66%;
+}
+.btn-hby {
+  background-image: url(../../img/btn_hby_gray.png);
+}
+.btn-yydb {
+  background-image: url(../../img/btn_yydb_gray.png);
+}
+.btn-wd {
+  background-image: url(../../img/btn_my.png);
+}
+.wd-item {
+  height: 10vh;
+  border-bottom: 1px solid #dfdfdf;
+}
+.wd-item a {
+  width: 100%;
+  height: 100%;
+  line-height: 10vh;
+  font-size: 2.4rem;
+}
+.wd-item img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  position: relative;
+  top: -3px;
+}

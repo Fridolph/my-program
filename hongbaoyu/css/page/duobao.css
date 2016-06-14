@@ -1,0 +1,70 @@
+a {
+  text-decoration: none;
+}
+.top-bar-fixed {
+  height: 8.7vh;
+  border-bottom: 1px solid #999;
+  -webkit-box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 0 8px rgba(0, 0, 0, 0.1) inset;
+  overflow: auto;
+  background-color: #fff;
+}
+.top-bar-fixed a {
+  color: #ef2250;
+}
+.top-bar {
+  height: 100%;
+  line-height: 8.7vh;
+}
+.top-bar .item {
+  height: 100%;
+}
+.item {
+  height: 100%;
+}
+.item .item-box {
+  height: 100%;
+}
+.item .item-box a {
+  display: block;
+  height: 100%;
+  font-size: 2.4rem;
+}
+.item .item-box a i {
+  margin-right: 12px;
+}
+.listBox {
+  margin-top: 12vh;
+}
+.list-item {
+  padding: 20px 0 10px 0;
+  overflow: auto;
+  border-bottom: 1px solid #ccc;
+}
+.list-item a {
+  display: block;
+  height: 13.5vh;
+}
+.list-item a img {
+  width: 100%;
+  max-width: 13.5vh;
+}
+.list-item h2 {
+  margin: 0;
+  margin-bottom: 1vh;
+  font-size: 1.8rem;
+}
+.list-item .sj-name {
+  color: #ef1f4e;
+}
+.list-item .state {
+  font-size: 1.8rem;
+  color: #ef1f4e;
+}
+.list-item .sj-state {
+  color: #333;
+}
+.list-item .time {
+  font-size: 1.6rem;
+  color: #666;
+}
