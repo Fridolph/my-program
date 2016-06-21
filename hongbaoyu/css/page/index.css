@@ -39,10 +39,10 @@ body {
   width: 100%;
   margin: 0;
 }
-li:nth-child(even) {
+.hb-list li:nth-child(even) {
   background-color: #ee0a3d;
 }
-li:nth-child(odd) {
+.hb-list li:nth-child(odd) {
   background-color: #f7d045;
 }
 .list-item {
@@ -63,12 +63,12 @@ li:nth-child(odd) {
   text-align: center;
 }
 .list-item a img {
-  width: 72%;
-  height: 72%;
+  width: 86%;
+  height: 86%;
   border-radius: 50%;
   margin-top: 8%;
 }
-.list-item a h2 {
+.list-item a span {
   font-size: 2rem;
   position: absolute;
   left: 0;
@@ -79,10 +79,10 @@ li:nth-child(odd) {
   color: #333333;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
-li:nth-child(5) {
+.hb-list li:nth-child(5) {
   background-color: #fff;
 }
-li:nth-child(5) img {
+.hb-list li:nth-child(5) img {
   width: 84%;
   height: 84%;
   border-radius: 50%;
@@ -115,4 +115,8 @@ li:nth-child(5) img {
 }
 .pop .index-tips a img {
   width: 100%;
+}
+
+#banner{
+  width:500%;
 }

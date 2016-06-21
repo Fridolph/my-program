@@ -66,10 +66,10 @@
 			this._speed = this.opts.speed;
 			this._tg = $(this);
 			this._list = this._tg.children().children();
-			this._width = parseInt(this._tg.css("width"));
+			// this._width = parseInt(this._tg.css("width"));
 			this._item_w = parseInt(this._list.css("width"));
 			this._len = this._list.length;
-			this._range = this.opts.range * this._width;
+			// this._range = this.opts.range * this._width;
 			this._pos = [];
 			this._start = [];
 			this._startX = 0;
@@ -104,7 +104,7 @@
 			var _this = this;
 			
 			$(this).children().css({
-				"width":this._width + "px",
+				// "width":this._width + "px",
 				"overflow":"visible"
 			});
 			

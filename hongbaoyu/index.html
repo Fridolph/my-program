@@ -9,9 +9,9 @@
 <title>红包雨首页</title>
 <link href="css/reset.css" rel="stylesheet"  />
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link href="css/banner.css" rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/page/index.css">
+<link href="css/banner.css" rel="stylesheet"/>
 </head>
 <body>
 <div class="container" id="seclevpage-content">
@@ -25,15 +25,9 @@
       <a href="#">5</a>
     </div>
     <div class="main_image">
-      <ul>
-        <li><span class="img_3"></span></li>
-        <li><span class="img_4"></span></li>
-        <li><span class="img_1"></span></li>
-        <li><span class="img_2"></span></li>
-        <li><span class="img_5"></span></li>
-      </ul>
-      <a href="javascript:;" id="btn_prev"></a>
-      <a href="javascript:;" id="btn_next"></a>
+      <ul id="banner">
+       
+      </ul>      
     </div>
   </div> 
 
@@ -53,33 +47,18 @@
   </nav> 
 </div>
 <div class="hby-container">
-  <ul class="clearfix hb-list">   
-    
+  <ul class="clearfix hb-list" id="hb_list">       
     <!-- <li class="list-item">
       <a href="">
         <img src="img/cS-3.jpg" alt="" />
-        <h2>商品名称</h2>
+        <span>商品名称</span>
       </a>
-    </li> -->
-    <li class="list-item"></li>
-    <li class="list-item"></li>
-    <li class="list-item"></li>
-    <li class="list-item"></li>
-    <li class="list-item">
-      <a href="more_hongbaoyu.html"><img class="img-more" src="img/more.png" alt="" /></a>
     </li>
-    <li class="list-item"></li>
-    <li class="list-item"></li>
-    <li class="list-item"></li>
-    <li class="list-item"></li>
-    <li class="list-item"></li>
-    <li class="list-item"></li>
-    <li class="list-item"></li>
-
+     -->
   </ul>
 </div>
 
-<div class="pop" style="display:block;">
+<div class="pop" style="display:none;">
   <div class="index-tips">
     <img src="img/tankuang.jpg" alt="" />
     <a id="close" href="javascript:;"><img src="img/close.png" alt="" /></a>
@@ -147,9 +126,72 @@ $(document).ready(function(){
     });
   })();
 
-  $("#close").click(function(){
-    $(".pop").fadeOut();
-  });
+  (function(){
+    $("#close").click(function(){
+      $(".pop").fadeOut();
+    });
+  })();
+
+
+  // list数据
+  (function(){
+    $.ajax({
+      type:"get",      
+      // url: "http://139.129.34.138/yiyuangou/api/merchant/list",
+      url: "http://139.129.34.138/yiyuangou/api/banner/list",
+      dataType: "json",
+      async:false,
+      success: function(res){
+        if(res.code == 1000){  
+          console.log('红包雨数据'+res.msg);
+          var ul = $("#banner");
+          
+          res.data.map(function(obj){
+            var li = '<li><a href="'+obj.url+'"><img src="'+obj.image+'" alt="" /></a></li>';
+
+            ul.css('width','500%');
+            ul.append(li);
+          });
+        }else{
+          console.log(res.meg);
+        }
+      }
+    });
+
+    $.ajax({
+      type:"get",      
+      // url: "http://139.129.34.138/yiyuangou/api/merchant/list",
+      url: "http://139.129.34.138/yiyuangou/api/merchant/list",
+      dataType: "json",
+      async:false,
+      success: function(res){
+        if(res.code == 1000){  
+          // console.log('红包雨数据'+res.msg);
+          var ul = $("#hb_list");
+          
+          res.data.map(function(obj){
+            var li = '<li class="list-item"><a class="goods" href="daojishi.html?merchantId='+obj.id+'&directUrl='+obj.url+'"><img src="'+obj.cover+'" alt="" /></a></li>';
+            
+            ul.append(li);            
+
+            var url = "daojishi.html?merchantId=" + obj.id;
+
+            console.log(url);
+
+            $(".goods").click(function(){
+              window.location.assign(url);
+            });
+            
+            
+          });
+        }else{
+          console.log(res.meg);
+        }
+      }
+    });
+  })();
+
+
 });
 </script>
 </body>

@@ -1,0 +1,68 @@
+{
+  "code":1000,
+  "msg":"Successful",
+  "data":[
+    {
+      "id":1,
+      "createTime":"2016-06-18 12:32:21",
+      "lastUpdateTime":"2016-06-18 12:32:24",
+      "image":"http://eww-yiyuangou.img-cn-shanghai.aliyuncs.com/files/managers/2016/6/18/cb568852e1e6748d12a321e1885b45f1.jpg",
+      "url":"http://www.baidu.com",
+      "remark":null,
+      "objectId":0,
+      "bannerType":0,
+      "type":1,
+      "status":1
+    },
+    {
+      "id":2,
+      "createTime":"2016-06-18 12:32:21",
+      "lastUpdateTime":"2016-06-18 12:32:24",
+      "image":"http://eww-yiyuangou.img-cn-shanghai.aliyuncs.com/files/managers/2016/6/18/cb568852e1e6748d12a321e1885b45f1.jpg",
+      "url":"http://www.baidu.com",
+      "remark":null,
+      "objectId":0,
+      "bannerType":0,
+      "type":1,
+      "status":1
+    },
+    {
+      "id":3,
+      "createTime":"2016-06-18 12:32:21",
+      "lastUpdateTime":"2016-06-18 12:32:24",
+      "image":"http://eww-yiyuangou.img-cn-shanghai.aliyuncs.com/files/managers/2016/6/18/cb568852e1e6748d12a321e1885b45f1.jpg",
+      "url":"http://www.baidu.com",
+      "remark":null,
+      "objectId":0,
+      "bannerType":0,
+      "type":1,
+      "status":1
+    },
+    {
+      "id":4,
+      "createTime":"2016-06-18 12:32:21",
+      "lastUpdateTime":"2016-06-18 12:32:24",
+      "image":"http://eww-yiyuangou.img-cn-shanghai.aliyuncs.com/files/managers/2016/6/18/cb568852e1e6748d12a321e1885b45f1.jpg",
+      "url":"http://www.baidu.com",
+      "remark":null,
+      "objectId":0,
+      "bannerType":0,
+      "type":1,
+      "status":1
+    },
+    {
+      "id":5,
+      "createTime":"2016-06-18 12:32:21",
+      "lastUpdateTime":"2016-06-18 12:32:24",
+      "image":"http://eww-yiyuangou.img-cn-shanghai.aliyuncs.com/files/managers/2016/6/18/cb568852e1e6748d12a321e1885b45f1.jpg",
+      "url":"http://www.baidu.com",
+      "remark":null,
+      "objectId":0,
+      "bannerType":0,
+      "type":1,
+      "status":1
+    }
+  ]
+}
+
+

@@ -57,11 +57,11 @@ body {
   width: 100%;
 }
 .details {
-  padding: 6%;
+  padding: 4%;
   margin-top: 5vh;
 }
 .details h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   margin-bottom: 2vh;
 }
@@ -71,7 +71,7 @@ body {
   margin-bottom: 2vh;
 }
 .details h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 1vh 0;
   border-top: 2px solid #dedede;
   line-height: 1.3;
