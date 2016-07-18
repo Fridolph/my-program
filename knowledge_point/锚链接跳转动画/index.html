@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+  .bigbox{width:500px;height:500px;background-color: #eee;}
+  h1{margin-bottom:120px; background-color: #ccc;}
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#title_01">我的链接01</a></li>
+    <li><a href="#title_02">我的链接02</a></li>
+    <li><a href="#title_03">我的链接03</a></li>
+    <li><a href="#title_04">我的链接04</a></li>
+    <li><a href="#title_05">我的链接05</a></li>
+  </ul>
+
+  <div class="bigbox"></div>
+
+  <h1 id="title_01">我是标题01</h1>
+  <h1 id="title_02">我是标题02</h1>
+  <h1 id="title_03">我是标题03</h1>
+  <h1 id="title_04">我是标题04</h1>
+  <h1 id="title_05">我是标题05</h1>
+
+
+
+<script src="../js/lib/jquery-1.9.1.min.js"></script>
+<script>
+$(function(){
+  $("ul li a").click(function() {
+    $("html, body").animate({
+      scrollTop: $( $(this).attr("href") ).offset().top + "px"
+    }, {
+      duration: 500,
+      easing: "swing"
+    });
+  });
+});  
+</script>
+</body>
+</html>
