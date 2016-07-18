@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style type="text/css" media="screen">
+  *{margin:0;padding:0;}
+
+  .flexbox{width:150px;height:150px;background-color: #e7e7e7; margin:20px; padding:25px; float:left;
+    -webkit-box-shadow: 0 0 40px rgba(0,0,0,0.2) inset, 8px 8px 10px rgba(0,0,0,0.1) inset, -8px -8px 10px rgba(0,0,0,0.1) inset;
+    box-shadow: 0 0 40px rgba(0,0,0,0.2) inset, 8px 8px 10px rgba(0,0,0,0.1) inset, -8px -8px 10px rgba(0,0,0,0.1) inset;
+  }
+  .content{
+    width: 40px;height:40px; border-radius:50%; background-color: #333; display:block; 
+    box-shadow:0 -10px 10px rgba(255,255,255,0.3) inset;
+  }
+
+  .flex-topleft{
+    display:flex;
+  }
+
+  .flex-topcenter{
+    display:flex; 
+    justify-content:center;
+  }
+
+  .flex-topright{
+    display:flex;
+    justify-content:flex-end;
+  }
+
+  .flex-centerleft{
+    display:flex;
+    align-items:center;
+  }
+
+  .flex-centercenter{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .flex-centerright{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  
+
+  .flex-bottomleft{
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  .flex-bottomcenter{
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .flex-bottomright{
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+  
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="flexbox flex-topleft">
+      <span class="content item"></span>
+    </div>
+    <div class="flexbox flex-topcenter">
+      <span class="content item"></span>
+    </div>
+    <div class="flexbox flex-topright">
+      <span class="content item"></span>
+    </div>
+    <div class="flexbox flex-centerleft">
+      <span class="content item"></span>
+    </div>
+    <div class="flexbox flex-centercenter">
+      <span class="content item"></span>
+    </div>
+    <div class="flexbox flex-centerright">
+      <span class="content item"></span>
+    </div>
+    <div class="flexbox flex-bottomleft">
+      <span class="content item"></span>
+    </div>
+    <div class="flexbox flex-bottomcenter">
+      <span class="content item"></span>
+    </div>
+    <div class="flexbox flex-bottomright">
+      <span class="content item"></span>
+    </div>
+  </div>
+</body>
+</html>
