@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+  *{box-sizing: border-box; margin:0; padding:0;}
+  .wrap{
+    margin:5px 0 0 5px;width:700px; height:600px;border:1px solid black;
+    display: flex;
+    /* flex-direction: row 默认横向 | 
+                       row-reverse 横向反转 | 纵向 | 纵向翻转  */
+
+    /* flex-wrap: nowrap 默认不换行 | 
+                  wrap 换行，第一行在上方 | 
+                  wrap-reverse 换行，第一行在下方 */
+
+    flex-flow:row wrap; 
+    /* 只是把direction和wrap两个属性合起来写了 */
+    justify-content: space-around;
+    /* justify-content: 
+                      flex-start 默认在主轴方向上对齐 | 
+                      flex-end | 在主轴右对齐
+                      center | 在主轴居中
+                      space-between | 两端对齐，项目之间的间隔都相等
+                      space-around 每个项目两侧间隔相等。所以项目之间的间隔比项目与边框的间隔大一倍
+                      */
+  }
+  .wrap .box{margin:5px 5px; border:1px solid #666; text-align: center; vertical-align: middle; font-size: 36px;}
+  .red{background-color: red;}
+  .orange{background-color: orange;}
+  .purple{background-color: purple;}
+  .green{background-color: green;}
+  .pink{background-color: pink;}
+  .box:nth-child(odd){
+    width:150px;height:150px;
+  }
+  .box:nth-child(even){
+    width:200px;height:150px;
+  }
+  </style>
+</head>
+<body>
+  <!-- 容器属性 -->
+  <!-- flex-direction -->
+  <!-- flex-wrap -->
+  <!-- flex-flow -->
+  <!-- justify-content -->
+  <!-- align-items -->
+  <!-- align-content -->
+
+  <div class="wrap">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+  </div>
+</body>
+</html>
