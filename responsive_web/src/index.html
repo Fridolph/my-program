@@ -7,6 +7,8 @@
   <link rel="author" type="text/plain" href="/humans.txt" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="js/vendor/owlCarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="js/vendor/owlCarousel/assets/owl.theme.default.min.css">
 </head>
 <body>
 <!--[if lte IE8]>
@@ -59,14 +61,16 @@
     </div>
 
     <div class="ad">
-      <div class="item">
-        <img src="img/ad001.png" />
-      </div>
-      <div class="item">
-        <img src="img/ad002.png" />
-      </div>
-      <div class="item">
-        <img src="img/ad003.png" />
+      <div class="owl-carousel">
+        <div class="item">
+          <img src="img/ad001.png" />
+        </div>
+        <div class="item">
+          <img src="img/ad002.png" />
+        </div>
+        <div class="item">
+          <img src="img/ad003.png" />
+        </div>
       </div>
     </div>
 
@@ -275,5 +279,10 @@
     </ul>
     <p>北京某互联网金融公司 版权所有 2015-2016</p>
   </footer>
+
+
+<script src="js/vendor/jquery-1.9.1.min.js"></script>
+<script src="js/vendor/owlCarousel/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
