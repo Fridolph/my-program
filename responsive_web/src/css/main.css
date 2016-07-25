@@ -316,7 +316,7 @@ header {width:100%;}
 
 /* 滚动广告 */
 .ad{
-  display: none;
+  // display: none;
 }
 
 /* 平台公告 */
