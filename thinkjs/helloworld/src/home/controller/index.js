@@ -9,7 +9,7 @@ export default class extends Base {
    */
   indexAction(){
     //auto render template file index_index.html
-    this.assign("title", 'ThinkJS 官网');
+    this.assign('title', 'HelloWorld_byThinkJs');
     return this.display();
   }
 }
