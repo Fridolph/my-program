@@ -1,0 +1,447 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  background: #ffce4c;
+}
+
+$demoW: 500px;
+$demoH: 800px;
+
+$headerH: 90px;
+
+$lineHeight: 3px;
+
+$printerW: 290px;
+$printerTopH: 15px;
+$printerBtmH: 50px;
+$printerMrgTop: -90px;
+$printerHeadH: 10px;
+
+$contPadTop: 5px;
+
+$itemsH: $demoH - $headerH - $contPadTop;
+
+$itemW: 450px;
+$itemH: 210px;
+$itemTopH: 150px;
+$itemBtmH: $itemH - $itemTopH;
+$itemMrg: 20px;
+$itemSmallW: 150px;
+$itemSmallScale: $itemSmallW / $itemW;
+$itemSmallH: $itemH * $itemSmallScale;
+$itemSmallStartX: (1 - $itemSmallScale) / 2 * $itemH * -1;
+
+$maxDragY: 150px;
+$maxPrinterY: 90px;
+$printStep1AT: 0.3s;
+$printStep2Delay: $printStep1AT + 0.1s;
+$printStep2AT: 1.8s;
+$printStep3Delay: $printStep2Delay + $printStep2AT;
+$printStep3AT: 0.55s;
+
+$printerHeadReps: 3;
+
+@mixin printing {
+  .demo.s--printing & {
+    @content;
+  }
+}
+
+@mixin printing-step-3 {
+  .demo.s--printing-step-3 & {
+    @content;
+  }
+}
+
+.demo {
+  position: relative;
+  width: $demoW;
+  height: $demoH;
+  margin: 70px auto;
+  border-radius: 10px;
+  background-color: #5b399e;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+  perspective: 1000px;
+
+  &__header {
+    position: relative;
+    height: $headerH;
+    text-align: center;
+    font-size: 30px;
+    line-height: $headerH + 5px;
+    color: #fff;
+  }
+
+  &__cont {
+    overflow: hidden;
+    position: relative;
+    padding-top: $contPadTop;
+    user-select: none;
+  }
+
+  &__line {
+    z-index: 2;
+    position: absolute;
+    left: 1px;
+    top: 0;
+    width: $demoW - 2px;
+    height: $lineHeight;
+    background: #ffbd00;
+    transform: scaleX(0);
+
+    @include printing {
+      transition: transform $printStep1AT;
+      transform: scaleX(1) !important;
+    }
+    
+    @include printing-step-3 {
+      transition: transform $printStep3AT/2;
+      transform: scaleX(0) !important;
+    }
+
+    .demo.s--reset & {
+      transition: transform $printStep1AT;
+      transform: scaleX(0) !important;
+    }
+  }
+
+  &__items {
+    overflow: hidden;
+    z-index: 3;
+    position: relative;
+    height: $itemsH;
+    cursor: grab;
+
+    @include printing {
+      transition: transform $printStep1AT;
+      transform: translate3d(0,$maxDragY,0) !important;
+    }
+    
+    @include printing-step-3 {
+      transition: padding $printStep3AT*0.6 $printStep3AT*0.4 cubic-bezier(.56,.33,.32,1.45);
+      padding-top: 75px;
+    }
+
+    .demo.s--reset & {
+      transition: transform $printStep1AT;
+      transform: translate3d(0,0,0) !important;
+    }
+  }
+}
+
+.printer {
+  position: absolute;
+  left: 50%;
+  top: $lineHeight;
+  width: $printerW;
+  margin-left: $printerW/-2;
+  margin-top: $printerMrgTop;
+  transform: translate3d(0,0,0);
+
+  @include printing {
+    transition: transform $printStep1AT;
+    transform: translate3d(0,$maxPrinterY,0) !important;
+  }
+  
+  @include printing-step-3 {
+    transition: transform $printStep3AT/2;
+    transform: translate3d(0,0,0) !important;
+  }
+
+  .demo.s--reset & {
+    transition: transform $printStep1AT;
+    transform: translate3d(0,0,0) !important;
+  }
+
+  &__main-part {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  &__top {
+    z-index: 1;
+    height: $printerTopH;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: #5f45ac;
+  }
+
+  &__btm {
+    height: $printerBtmH;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #4e2f96;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,0.25);
+  }
+
+  &__circle {
+    position: absolute;
+    right: 32px;
+    bottom: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #edab26;
+  }
+
+  &__yellow {
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    width: 170px;
+    height: 100px;
+    margin-left: -85px;
+
+    &-inner {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 38px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      background-color: #feba2a;
+    }
+
+    &-part {
+      position: absolute;
+      top: 100%;
+      width: 78px;
+      height: 8px;
+      background-color: inherit;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 40px;
+        height: 16px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: inherit;
+      }
+
+      &:nth-child(1) {
+        left: 0;
+        border-bottom-right-radius: 4px;
+
+        &:after {
+          left: 0;
+        }
+      }
+
+      &:nth-child(2) {
+        right: 0;
+        border-bottom-left-radius: 4px;
+
+        &:after {
+          right: 0;
+        }
+      }
+    }
+  }
+
+  &__head {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 20px;
+    height: $printerHeadH;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #e73388;
+    
+    @include printing {
+      animation: printerHeadAnimation $printStep2AT/($printerHeadReps + 1) $printStep2Delay $printerHeadReps;
+    }
+  }
+  
+  &__item-cont {
+    position: relative;
+    height: 100%;
+  }
+}
+
+.item {
+  position: relative;
+  width: $itemW;
+  height: $itemH;
+  margin: 0 auto $itemMrg;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,0.25);
+  background: #fff;
+  transform-style: preserve-3d;
+
+  &--in-printer {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: $itemW/-2;
+    margin-top: $itemSmallStartX + $itemSmallH * -1;
+    transform: rotateX(-180deg) scale($itemSmallScale);
+    
+    @include printing {
+      transition: margin-top $printStep2AT $printStep2Delay ease-out;
+      margin-top: $itemSmallStartX + $printerHeadH + 5px;
+    }
+    
+    @include printing-step-3 {
+      display: none;
+    }
+  }
+  
+  &--boilerplate {
+    display: none;
+  }
+  
+  &.s--cloned {
+    position: absolute;
+    margin-left: (1 - $itemSmallScale) / 2 * $itemW * -1;
+    margin-top: $itemSmallStartX;
+    transform: rotateX(-180deg) scale($itemSmallScale);
+    
+    @include printing-step-3 {
+      transition: transform $printStep3AT cubic-bezier(.67,.28,.39,1.22);
+      transform: rotateX(0) scale(1) translateY(30px);
+    }
+  }
+  
+  &__side {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    backface-visibility: hidden;
+  }
+  
+  &__front {
+    z-index: 2;
+  }
+  
+  &__top {
+    position: relative;
+    height: $itemTopH;
+    padding: 25px 30px 10px;
+  }
+  
+  &__heading {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    color: darken(#d7d7d7, 10%);
+  }
+  
+  &__amount {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  &__info {
+    max-width: 340px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  &__img {
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    width: 70px;
+    height: 70px;
+  }
+  
+  &__btm {
+    $borderW: 2px;
+    
+    position: relative;
+    height: $itemBtmH;
+    border-top: $borderW solid darken(#f7f7f7, 10%);
+    line-height: $itemBtmH - $borderW;
+    
+    p {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding-top: $borderW;
+    }
+  }
+  
+  &__details {
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #9589b1;
+  }
+  
+  &__when {
+    padding-right: 20px;
+    text-align: right;
+    font-size: 14px;
+    color: darken(#e5e5e5, 10%);
+  }
+  
+  &__back {
+    transform: rotateX(180deg) scaleY(-1);
+    
+    .item__heading {
+      height: 18px;
+      width: 90px;
+      background: lighten(#d7d7d7, 10%);
+    }
+    
+    .item__amount {
+      width: 60px;
+      height: 30px;
+      background: #cfcfcf;
+    }
+    
+    .item__info {
+      width: 160px;
+      height: 20px;
+      background: #cfcfcf;
+    }
+    
+    .item__img {
+      background-color: orange;
+      border-radius: 50%;
+    }
+    
+    .item__details {
+      position: absolute;
+      left: 30px;
+      top: 20px;
+      width: 80px;
+      height: 20px;
+      background: lighten(#9589b1, 10%);
+    }
+    
+    .item__when {
+      position: absolute;
+      right: 20px;
+      top: 22px;
+      width: 50px;
+      height: 16px;
+      background: #e5e5e5;
+    }
+  }
+}
+
+@keyframes printerHeadAnimation {
+  50% {
+    transform: translateX(60px);
+  }
+}
