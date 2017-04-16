@@ -8,7 +8,6 @@
 
 <a href="http://blog.fridolph.top/demos/%E7%AE%80%E5%8D%95%E7%82%AB%E9%85%B7%E7%9A%84logo%E5%8A%A8%E7%94%BB/index.html" target="_blank">简单炫酷的logo动画</a>
 
-<a href="http://blog.fridolph.top/demos/%E9%94%9A%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC%E5%8A%A8%E7%94%BB/index.html" target="_blank">锚点跳转动画</a>
 
 <a href="http://blog.fridolph.top/demos/%E6%96%87%E5%AD%97%E7%89%B9%E6%95%88/index.html" target="_blank">各种文字特效</a>
 
