@@ -6,27 +6,27 @@
 ## 动画特效
 名字就这么取了，其实更多是css3 transition transform animation的运用，比UI组件模块多了动效，就暂时这么来区分了
 
-[简单炫酷的logo动画](http://blog.fridolph.top/demos/%E7%AE%80%E5%8D%95%E7%82%AB%E9%85%B7%E7%9A%84logo%E5%8A%A8%E7%94%BB/index.html)
+<a href="http://blog.fridolph.top/demos/%E7%AE%80%E5%8D%95%E7%82%AB%E9%85%B7%E7%9A%84logo%E5%8A%A8%E7%94%BB/index.html" target="_blank">简单炫酷的logo动画</a>
 
-[锚点跳转动画](http://blog.fridolph.top/demos/%E9%94%9A%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC%E5%8A%A8%E7%94%BB/index.html)
+<a href="http://blog.fridolph.top/demos/%E9%94%9A%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC%E5%8A%A8%E7%94%BB/index.html" target="_blank">锚点跳转动画</a>
 
-[各种文字特效](http://blog.fridolph.top/demos/%E6%96%87%E5%AD%97%E7%89%B9%E6%95%88/index.html)
+<a href="http://blog.fridolph.top/demos/%E6%96%87%E5%AD%97%E7%89%B9%E6%95%88/index.html" target="_blank">各种文字特效</a>
 
-[buttons-box-shadow](http://blog.fridolph.top/demos/buttons-box-shadow/index.html)
+<a href="http://blog.fridolph.top/demos/buttons-box-shadow/index.html" target="_blank">buttons-box-shadow</a>
 
-[css3-transform综合效果一览](http://blog.fridolph.top/demos/css3-transform/index.html)
+<a href="http://blog.fridolph.top/demos/css3-transform/index.html" target="_blank">css3-transform综合效果一览</a>
 
-[CSS3等待动画](http://blog.fridolph.top/demos/CSS3%E7%AD%89%E5%BE%85%E5%8A%A8%E7%94%BB/index.html)
+<a href="http://blog.fridolph.top/demos/CSS3%E7%AD%89%E5%BE%85%E5%8A%A8%E7%94%BB/index.html" target="_blank">CSS3等待动画</a>
 
-[CSS3实现scroll条](http://blog.fridolph.top/demos/CSS3%E5%AE%9E%E7%8E%B0scroll%E6%9D%A1/index.html)
+<a href="http://blog.fridolph.top/demos/CSS3%E5%AE%9E%E7%8E%B0scroll%E6%9D%A1/index.html" target="_blank">CSS3实现scroll条</a>
 
-[Header-menu示例demo](http://blog.fridolph.top/demos/Header-menu/index.html)
+<a href="http://blog.fridolph.top/demos/Header-menu/index.html" target="_blank">Header-menu示例demo</a>
 
-[hover-出行-图片动画](http://blog.fridolph.top/demos/hover-%E5%87%BA%E8%A1%8C-%E5%9B%BE%E7%89%87%E5%8A%A8%E7%94%BB/index.html)
+<a href="http://blog.fridolph.top/demos/hover-%E5%87%BA%E8%A1%8C-%E5%9B%BE%E7%89%87%E5%8A%A8%E7%94%BB/index.html" target="_blank">hover-出行-图片动画</a>
 
-[menu圆型菜单](http://blog.fridolph.top/demos/menu%E5%9C%86%E5%9E%8B%E8%8F%9C%E5%8D%95/index.html)
+<a href="http://blog.fridolph.top/demos/menu%E5%9C%86%E5%9E%8B%E8%8F%9C%E5%8D%95/index.html" target="_blank">menu圆型菜单</a>
 
-[text-hover效果](http://blog.fridolph.top/demos/text-hover%E6%95%88%E6%9E%9C/index.html)
+<a href="http://blog.fridolph.top/demos/text-hover%E6%95%88%E6%9E%9C/index.html" target="_blank">text-hover效果</a>
 
 ## 展示
 对，这里所有的demo大多以展示为主，要问我和动效的区分嘛，其实都差不多，哈哈。凭感觉分类呗~~
