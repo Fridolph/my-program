@@ -1,107 +1,116 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-<meta content='initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width' name='viewport'>
-<title>jQuery可自定义图片宽度/高度瀑布流代码</title>
-<meta name="keywords" content="瀑布流插件,jQuery瀑布流,响应式瀑布流,瀑布流代码,JS瀑布流"/>
-<meta name="description" content="一款jQuery可自定义图片宽度/高度瀑布流代码下载，该JS瀑布流代码是一款支持自定义插入图片以及使用URL地址直接添加图片的jQuery插件瀑布流特效。"/>
-<link rel="stylesheet" type="text/css" href="css/default.css">
-<link href='css/style.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta content='initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width' name='viewport'>
+  <title>jQuery可自定义图片宽度/高度瀑布流代码</title>
+  <meta name="keywords" content="瀑布流插件,jQuery瀑布流,响应式瀑布流,瀑布流代码,JS瀑布流" />
+  <meta name="description" content="一款jQuery可自定义图片宽度/高度瀑布流代码下载，该JS瀑布流代码是一款支持自定义插入图片以及使用URL地址直接添加图片的jQuery插件瀑布流特效。" />
+  <link rel="stylesheet" type="text/css" href="css/default.css">
+  <link href='css/style.css' rel='stylesheet'>
 </head>
+
 <body class="keBody">
-<h1 class="keTitle">jQuery可自定义图片宽度/高度瀑布流代码</h1>
-<div class="kePublic">
-<!--效果html开始-->
-<div class="htmleaf-container">
-  <div id='controls-top'>
-    <span class='control-button one'>Small</span>
-    <span class='control-button two'>Medium</span>
-    <span class='control-button three'>Large</span>
-    <span class='control-button five'>Gutter Off</span>
-    <span class='control-button four'>Gutter On</span>
-    <span class='control-button six'>Optimized</span>
-    <span class='control-button seven'>Ordinal</span>
-    <span class='control-button eight'>Fluid</span>
-    <span class='control-button nine'>Set columns</span>
-    <span class='control-button twelve'>Width 200</span>
-    <span class='control-button eleven'>Width 320</span>
-    <span class='control-button ten'>Clear</span>
+  <h1 class="keTitle">jQuery可自定义图片宽度/高度瀑布流代码</h1>
+  <div class="kePublic">
+    <!--效果html开始-->
+    <div class="htmleaf-container">
+      <div id='controls-top'>
+        <span class='control-button one'>Small</span>
+        <span class='control-button two'>Medium</span>
+        <span class='control-button three'>Large</span>
+        <span class='control-button five'>Gutter Off</span>
+        <span class='control-button four'>Gutter On</span>
+        <span class='control-button six'>Optimized</span>
+        <span class='control-button seven'>Ordinal</span>
+        <span class='control-button eight'>Fluid</span>
+        <span class='control-button nine'>Set columns</span>
+        <span class='control-button twelve'>Width 200</span>
+        <span class='control-button eleven'>Width 320</span>
+        <span class='control-button ten'>Clear</span>
+      </div>
+      <div id='wrapper'>
+        <div class='grid-wrapper'>
+          <div class='grid-item'>
+            <div class="img-wrapper">
+              <img src='picture/1.jpg'>
+            </div>
+            <div class="content">
+              <div class="title">我是标题</div>
+              <div class="para">我是内容啊啊啊啊 啊啊</div>
+            </div>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/2.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/3.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/4.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/5.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/6.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/7.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/8.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/9.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/1.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/2.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/3.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/4.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/5.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/6.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/7.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/8.jpg'>
+          </div>
+          <div class='grid-item'>
+            <img src='picture/9.jpg'>
+          </div>
+        </div>
+      </div>
+      <div id='controls-bottom'>
+        <input class='control-input one' placeholder='添加一张图片的URL看看效果！' type='url'>
+        <div class='control-button bottom-one'>添加</div>
+      </div>
+    </div>
+    <!--<script src='js/raf.js'></script>-->
+    <script src='js/jquery.js'></script>
+    <!--<script src='js/transit.js'></script>-->
+    <!--<script src='js/velocity.js'></script>-->
+    <!--<script src='js/imgload.adem.js'></script>-->
+    <!--<script src='js/stackgrid.adem.js'></script>-->
+    <!--<script src='js/website.js'></script>-->
+    <!--效果html结束-->
+    <div class="clear"></div>
   </div>
-  <div id='wrapper'>
-    <div class='grid-wrapper'>
-    <div class='grid-item'>
-      <img src='picture/1.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/2.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/3.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/4.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/5.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/6.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/7.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/8.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/9.jpg'>
-    </div>
-        <div class='grid-item'>
-      <img src='picture/1.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/2.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/3.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/4.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/5.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/6.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/7.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/8.jpg'>
-    </div>
-    <div class='grid-item'>
-      <img src='picture/9.jpg'>
-    </div>
-    </div>
-  </div>
-  <div id='controls-bottom'>
-    <input class='control-input one' placeholder='添加一张图片的URL看看效果！' type='url'>
-    <div class='control-button bottom-one'>添加</div>
-  </div>
-</div>
-<!--<script src='js/raf.js'></script>-->
-<script src='js/jquery.js'></script>
-<script src='js/transit.js'></script>
-<script src='js/velocity.js'></script>
-<script src='js/imgload.adem.js'></script>
-<script src='js/stackgrid.adem.js'></script>
-<script src='js/website.js'></script>
-<!--效果html结束-->
-<div class="clear"></div>
-</div>
 
 </body>
+
 </html>
