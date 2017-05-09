@@ -6,10 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>DatePicker</title>
   <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .datepicker-input {
+      border:1px solid #ccc;
+      border-radius: 4px;
+      padding: 5px;
+      height:24px;
+      line-height:24px;
+      width:230px;
+      position:absolute;
+      left:20%;
+      top:30px;
+    }
+    .datepicker-input:focus {
+      outline: 0 none;
+      border: 1px solid #1abc9c;
+    }
+  </style>
 </head>
 <body>
-  <div class="ui-datepicker-wrapper" id="ui-datepicker-wrapper">
-    <!--<div class="ui-datepicker-header">
+  <input class="datepicker-input" type="text" />
+  <!--<div class="ui-datepicker-wrapper" id="ui-datepicker-wrapper">
+    <div class="ui-datepicker-header">
       <a href="" class="ui-datepicker-btn ui-datepicker-btn-prev">&lt;</a>
       <a href="" class="ui-datepicker-btn ui-datepicker-btn-next">&gt;</a>
       <span class="ui-datepicker-curr-month">2016-12</span>
@@ -75,16 +93,16 @@
           </tr>            
         </tbody>
       </table>
-    </div>-->
-  </div>
+    </div>
+  </div>-->
 
-  <script src="./js/DatePicker.js"></script>
+  <script src="./js/datepicker.js"></script>
   <script src="./js/main.js"></script>
   <script>
-    // var monthData = DatePicker.getMonthData(2016,12);
-    // console.log(monthData);
-    var dateWrapper = document.getElementById("ui-datepicker-wrapper");
-    DatePicker.init(dateWrapper);
+    var monthData = datepicker.getMonthData(2017,5);
+    console.log(monthData);
+
+    datepicker.init('.datepicker-input');
   </script>
 </body>
 </html>
