@@ -92,6 +92,9 @@
 ## JS_jQuery 
 基于jQuery或原生js实现的各类效果~~ 分类没想好，暂时放这里了
 
+[图片预加载]()
+地址待更新，两种方式实现，有序无序图片预加载
+
 [扁平设计jQuery手拉风琴](http://blog.fridolph.top/demos/JS_JQuery/%E6%89%81%E5%B9%B3%E8%AE%BE%E8%AE%A1jQuery%E6%89%8B%E6%8B%89%E9%A3%8E%E7%90%B4/index.html)
 
 [点击导航菜单跳转到指定位置特效](http://blog.fridolph.top/demos/JS_JQuery/%E7%82%B9%E5%87%BB%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95%E8%B7%B3%E8%BD%AC%E5%88%B0%E6%8C%87%E5%AE%9A%E4%BD%8D%E7%BD%AE%E7%89%B9%E6%95%88/index.html)
@@ -119,3 +122,5 @@
 
 [螺旋header效果](http://blog.fridolph.top/demos/luoxuanNav/index.html)
 
+[datepicker](地址待上传)
+地址待更新，datepicker组件
