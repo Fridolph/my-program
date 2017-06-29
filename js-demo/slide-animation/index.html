@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>全屏栅格背景动画</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>  
+  <div class="cont">
+    <a style="position: absolute; top: 0; right: 0; border: 0;" href="https://github.com/you"><img src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+    <div class="mouse"></div>
+    <div class="app">
+      <div class="app__bgimg">
+        <div class="app__bgimg-image app__bgimg-image--1">
+        </div>
+        <div class="app__bgimg-image app__bgimg-image--2">
+        </div>
+      </div>
+      <div class="app__img">
+        <img onmousedown="return false" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/whiteTest4.png" alt="city" />
+      </div>
+
+      <div class="app__text app__text--1">
+        <div class="app__text-line app__text-line--4">imperdiet </div>
+        <div class="app__text-line app__text-line--3">ut le</div>
+        <div class="app__text-line app__text-line--2">non tincidunt </div>
+        <div class="app__text-line app__text-line--1"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/opus-attachment.png" alt="" /></div>
+      </div>
+
+      <div class="app__text app__text--2">
+        <div class="app__text-line app__text-line--4">habitant</div>
+        <div class="app__text-line app__text-line--3">ut eget</div>
+        <div class="app__text-line app__text-line--2">Nam imperdiet</div>
+        <div class="app__text-line app__text-line--1"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/opus-attachment.png" alt="" /></div>
+      </div>
+    </div>
+    <div class="pages">
+      <ul class='pages__list'>
+        <li data-target='1' class='pages__item pages__item--1 page__item-active'></li>
+        <li data-target='2' class='pages__item pages__item--2'></li>
+      </ul>
+    </div>
+  </div>
+  <a href="https://dribbble.com/shots/2936160-Opus-Animation" target="_blank" class="icon-link">
+    <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png">
+  </a>
+  <a href="https://twitter.com/mrspok407" target="_blank" class="icon-link icon-link--twitter">
+    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      const $app = $('.app');
+      const $img = $('.app__img');
+      const $pageNav1 = $('.pages__item--1');
+      const $pageNav2 = $('.pages__item--2');
+      let animation = true;
+      let curSlide = 1;
+      let scrolledUp, nextSlide;
+
+      let pagination = function (slide, target) {
+        animation = true;
+        if (target === undefined) {
+          nextSlide = scrolledUp ? slide - 1 : slide + 1;
+        } else {
+          nextSlide = target;
+        }
+
+        $('.pages__item--' + nextSlide).addClass('page__item-active');
+        $('.pages__item--' + slide).removeClass('page__item-active');
+
+        $app.toggleClass('active');
+        setTimeout(function () {
+          animation = false;
+        }, 3000)
+      }
+
+      let navigateDown = function () {
+        if (curSlide > 1) return;
+        scrolledUp = false;
+        pagination(curSlide);
+        curSlide++;
+      }
+
+      let navigateUp = function () {
+        if (curSlide === 1) return;
+        scrolledUp = true;
+        pagination(curSlide);
+        curSlide--;
+      }
+
+      setTimeout(function () {
+        $app.addClass('initial');
+      }, 1500);
+
+      setTimeout(function () {
+        animation = false;
+      }, 4500);
+
+      $(document).on('mousewheel DOMMouseScroll', function (e) {
+        var delta = e.originalEvent.wheelDelta;
+        if (animation) return;
+        if (delta > 0 || e.originalEvent.detail < 0) {
+          navigateUp();
+        } else {
+          navigateDown();
+        }
+      });
+
+      $(document).on("click", ".pages__item:not(.page__item-active)", function () {
+        if (animation) return;
+        let target = +$(this).attr('data-target');
+        pagination(curSlide, target);
+        curSlide = target;
+      });
+    });
+  </script>
+</body>
+
+</html>

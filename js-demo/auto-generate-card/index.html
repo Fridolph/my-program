@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>名片自动生成 - 转载</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a style="position: absolute; top: 0; right: 0; border: 0;" href="https://github.com/you"><img src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+  <div class="demo">
+  <div class="demo__header">
+    转自Github
+  </div>
+  <div class="demo__cont">
+    <div class="demo__line"></div>
+    <div class="printer">
+      <div class="printer__main-part printer__top"></div>
+      <div class="printer__main-part printer__btm">
+        <div class="printer__circle"></div>
+        <div class="printer__yellow">
+          <div class="printer__yellow-inner">
+            <div class="printer__yellow-part"></div>
+            <div class="printer__yellow-part"></div>
+            <div class="printer__item-cont"></div>
+            <div class="printer__head"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="demo__items">
+      <div class="item">
+        <div class="item__top">
+          <h2 class="item__heading">Payment receipt</h2>
+          <p class="item__amount">$ 666</p>
+          <p class="item__info">Something whatever</p>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt="" class="item__img" />
+        </div>
+        <div class="item__btm">
+          <p class="item__details">View details</p>
+          <p class="item__when">15 min</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__top">
+          <h2 class="item__heading">Payment receipt</h2>
+          <p class="item__amount">$ 666</p>
+          <p class="item__info">Something whatever</p>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt="" class="item__img" />
+        </div>
+        <div class="item__btm">
+          <p class="item__details">View details</p>
+          <p class="item__when">15 min</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__top">
+          <h2 class="item__heading">Payment receipt</h2>
+          <p class="item__amount">$ 666</p>
+          <p class="item__info">Something whatever</p>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt="" class="item__img" />
+        </div>
+        <div class="item__btm">
+          <p class="item__details">View details</p>
+          <p class="item__when">15 min</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__top">
+          <h2 class="item__heading">Payment receipt</h2>
+          <p class="item__amount">$ 666</p>
+          <p class="item__info">Something whatever</p>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt="" class="item__img" />
+        </div>
+        <div class="item__btm">
+          <p class="item__details">View details</p>
+          <p class="item__when">15 min</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__top">
+          <h2 class="item__heading">Payment receipt</h2>
+          <p class="item__amount">$ 666</p>
+          <p class="item__info">Something whatever</p>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt="" class="item__img" />
+        </div>
+        <div class="item__btm">
+          <p class="item__details">View details</p>
+          <p class="item__when">15 min</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- instead of template engine -->
+
+<div class="item item--in-printer item--boilerplate">
+  <div class="item__side item__front">
+    <div class="item__top">
+      <h2 class="item__heading"></h2>
+      <a href="#" class="item__amountLink" target="_blank">
+        <p class="item__amount"></p>
+      </a>
+      <p class="item__info"></p>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt="" class="item__img" />
+    </div>
+    <div class="item__btm">
+      <p class="item__details"></p>
+      <p class="item__when"></p>
+    </div>
+  </div>
+  <div class="item__side item__back">
+    <div class="item__top">
+      <div class="item__heading"></div>
+      <div class="item__amount"></div>
+      <div class="item__info"></div>
+      <div class="item__img"></div>
+    </div>
+    <div class="item__btm">
+      <div class="item__details"></div>
+      <div class="item__when"></div>
+    </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>

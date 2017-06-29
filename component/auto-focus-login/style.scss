@@ -1,0 +1,626 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
+$app-padding: 6vh;
+$app-width: 50vh;
+$app-height: 90vh;
+$detail-padding: 4vh;
+$heading-text-size: 4.8vh;
+$color-primary: #0F9EDE;
+$color-secondary: #D0DFF0;
+$color-text-secondary: rgba(black, 0.45);
+$color-border: #E3E3E3;
+$color-cal: #08B5CF;
+$color-heart: #9965AA;
+$color-steps: $color-primary;
+$color-temp: #F4814B;
+$view-delay: 2s;
+$duration: 0.6s;
+$segment-duration: 1.2s;
+$pulse-duration: 1.75s;
+$easing: cubic-bezier(0.77, 0, 0.175, 1);
+$stroke-width: 0.5vh;
+
+* {
+  transition: all $duration $easing;
+}
+
+#app {
+  width: $app-width;
+  height: $app-height;
+  padding: $app-padding;
+  background: white;
+  box-shadow: 0 0 2rem rgba(black, 0.1);
+}
+
+.app-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.app-header {
+  padding: $app-padding;
+  
+  &, > * {  
+    font-size: $heading-text-size;
+    margin: 0;
+    font-weight: 300;
+  }
+  
+  > h1 {
+    font-size: $heading-text-size;
+    font-weight: 400;
+    margin-bottom: $heading-text-size;
+  }
+  
+  > h2 {
+    font-size: 3vh;
+  }
+}
+
+.app-subheading {
+  color: $color-text-secondary;
+}
+
+.app-register {
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+  line-height: 10vh;
+  padding: 0 $app-padding;
+  color: $color-text-secondary;
+  
+  > a {
+    font-weight: 400;
+  }
+}
+
+input {
+  font-size: 2.5vh;
+  width: calc(100% - 13vh);
+  height: 7.5vh;
+  margin-bottom: 2vh;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 6.5vh;
+  z-index: 2;
+  border: none;
+  box-shadow: inset 0 -0.5vh rgba(black, 0.1);
+  
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 -0.5vh transparent;
+  }
+  
+  &[type="email"] {
+    top: 58%;
+  }
+  
+  &[type="password"] {
+    top: calc(58% + 7.5vh);
+  }
+}
+
+input[type="email"]:valid ~ * .st1 {
+  transition-timing-function: ease-in-out;
+  stroke-dasharray: 50, 153;  
+  stroke-dashoffset: 25;
+}
+
+input[type="password"]:focus ~ * .st0,
+input[type="password"]:valid ~ * .st0,
+.app-button:focus ~ * .st0 {
+  stroke-dasharray: 210, 900;
+  stroke-dashoffset: -305;
+}
+
+input[type="email"]:focus ~ * .st0 {
+  stroke-dasharray: 210, 900;
+  stroke-dashoffset: 0;
+}
+
+input:not(:valid) ~ .app-button {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.app-button {
+  text-decoration: none;
+  color: $color-primary;
+  font-size: $heading-text-size;
+  padding: 0 $app-padding;
+  position: absolute;
+  bottom: 10vh;
+  font-weight: 400;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+@keyframes button-press {
+  from, 20% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  40%, to {
+    opacity: 0;
+  }
+}
+
+#welcome:target ~ * {
+  .app-button {
+    // transition-delay: $duration + 0.1s;
+    animation: button-press 2s $easing both;
+  }
+  
+  .st0 {
+    stroke-dashoffset: -760;
+    stroke-dasharray: 140, 900;
+    transition-duration: $segment-duration;
+    animation: disappear 0s $segment-duration + 0.1s both;
+  }
+  
+  .st1 {
+    transition-duration: $duration / 2;
+    opacity: 0;
+  }
+  
+  .app-graphic {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  
+  #svg-lines {
+    animation: pulse $pulse-duration / 3 $segment-duration ease-in-out both;
+    animation-iteration-count: 3;
+  }
+  
+  .svg-loader {
+    animation: appear 0s $segment-duration both;
+  }
+  
+  .svg-loader-segment {
+    transition-delay: $view-delay + $pulse-duration;
+    opacity: 0;
+  }
+  
+  .svg-loader-segment.-cal {
+    transform: translateX(4vh) translateY(-4vh);
+    stroke: $color-cal;
+  }
+  
+  .svg-loader-segment.-heart {
+    transform: translateX(3.5vh) translateY(6.7vh);
+    stroke: $color-heart;
+  }
+  
+  .svg-loader-segment.-steps {
+    transform: translateX(-6.9vh) translateY(5.2vh);
+    stroke: $color-steps;
+  }
+  
+  .svg-loader-segment.-temp {
+    transform: translateX(-14vh) translateY(-4vh);
+    stroke: $color-temp;
+  }
+  
+  .svg-data {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition:
+      transform $duration ($view-delay + $pulse-duration + $segment-duration),
+      opacity $duration ($view-delay + $pulse-duration + $segment-duration),
+      stroke-dasharray $duration ($view-delay + $pulse-duration + $segment-duration),
+      stroke-dashoffset $duration ($view-delay + $pulse-duration + $segment-duration);
+    
+    &.-temp {
+      stroke-dasharray: 118;
+    }
+    
+    &.-cal {
+      stroke-dasharray: 113;
+    }
+    
+    &.-steps-bg, &.-steps {
+      stroke-dasharray: 100;
+      stroke-dashoffset: 0;
+    }
+    
+    &.-heart {
+      stroke-dasharray: 200;
+      stroke-dashoffset: 0;      
+    }
+  }
+  
+  .svg-activity-fill,
+  .svg-activity-line {
+    transform: translateY(0);
+    opacity: 1;
+    transition-duration: $duration * 2;
+    transition-delay: $view-delay + $pulse-duration + $segment-duration;
+  }
+  
+  .app-view:nth-child(1) > :not(svg) {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .app-view:nth-child(2) {
+    opacity: 1;
+    pointer-events: auto;
+    
+    > .app-header > *,
+    > .app-content,
+    > .app-activity,
+    .app-item,
+    .app-item > *:not(.app-graphic) {
+      transform: translateY(0);
+      transition-delay: $view-delay + $pulse-duration + $segment-duration;
+      opacity: 1;      
+    }
+    
+    > .app-activity {
+      opacity: 1;
+    }
+    
+    .app-item, > .app-content {
+      border-color: $color-border;
+    }
+  }
+}
+
+#welcome:not(:target) ~ * {
+  .app-graphic {
+    transition: all $duration $easing;
+  }
+}
+
+@keyframes pulse {
+  from, to {
+    transform: scale(1)
+  }
+  
+  50% {
+    transform: scale(1.2)
+  }
+}
+
+@keyframes disappear {
+  to { opacity: 0; }
+}
+
+@keyframes appear {
+  to { opacity: 1; }
+}
+
+.app-view:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  
+  > .app-header {
+    font-size: 1rem;
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $detail-padding;
+    padding-bottom: 1rem;
+  }
+  
+  > .app-header > h2 {
+    transform: translateY(1rem);
+    
+    > em {
+      color: $color-primary;
+      font-style: normal;
+    }
+  }
+  
+  > .app-header > h2,
+  .app-item > *:not(.app-graphic) {
+    transition-duration: $duration * 1.5;
+    opacity: 0;
+  }
+  
+  > .app-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    flex-basis: 40%;
+    border: 1px solid transparent;
+    border-left: none;
+    border-right: none;
+  }
+  
+  > .app-activity {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    opacity: 0;
+    
+    > .app-header {
+      padding: $detail-padding;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      
+      > h2 {
+        flex-grow: 1;
+      }
+    }
+    
+    > .app-graph {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.app-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  opacity: 0;
+}
+
+.app-item {
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border: 1px solid transparent;
+  padding: $detail-padding / 2 $detail-padding;
+  padding-bottom: 0;
+  
+  > *:not(.app-graphic) {
+    transform: translateY(1rem);
+  }
+  
+  &:nth-child(1) .app-graphic {
+    transform: translateX(17vh) translateY(5vh);
+  }
+  
+  &:nth-child(2) .app-graphic {
+    transform: translateX(-4vh) translateY(4vh);
+  }
+  
+  &:nth-child(3) .app-graphic {
+    transform: translateX(6vh) translateY(-7vh);
+  }
+  
+  &:nth-child(4) .app-graphic {
+    transform: translateY(-8vh) translateX(-4vh);
+  }
+}
+
+.app-graphic {
+  transition: transform $segment-duration ($view-delay + $pulse-duration $easing,
+    opacity $segment-duration / 2) ($view-delay + $pulse-duration + $segment-duration / 2) $easing;
+  margin-top: 1rem;
+  opacity: 0;
+}
+
+.app-data {
+  font-size: 2rem;
+}
+
+.app-unit {
+  font-size: 1rem;
+  color: $color-text-secondary;
+}
+
+.app-label {
+  font-size: 0.8rem;
+  color: $color-text-secondary
+}
+
+.app-menu-icon {
+  width: 1.5rem;
+  height: 2px;
+  background: $color-secondary;
+  margin-top: 0.5rem;
+  
+  &:before, &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1rem;
+    height: 100%;
+    background: $color-secondary;
+  }
+  
+  &:before { top: -0.5rem; right: 0.1rem; }
+  &:after { top: 0.5rem; left: 0.1rem; }
+}
+
+.app-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+}
+
+.app-tag {
+  font-size: 0.8rem;
+  color: $color-text-secondary;
+  
+  & + & { margin-left: 1rem; }
+  
+  &:before {
+    content: '';
+    display: inline-block;
+    margin-right: 0.5rem;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;  
+    background: $color-secondary;
+  }
+  
+  &.-active:before {    
+    background: $color-primary;
+  }
+}
+
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #8A9AAE;
+}
+
+.st0, .st1, .svg-loader-segment {
+  fill: none;
+  stroke: $color-primary;
+  stroke-width: $stroke-width;
+  stroke-alignment: inside;
+  opacity: 1;
+  transition: all $duration $easing;
+}
+
+.svg-loader {
+  opacity: 0;
+}
+
+.st0 {
+  stroke-dasharray: 0, 900;
+  stroke-dashoffset: 0;
+}
+
+.st1 {
+  transition-delay: 0.3s;
+  stroke-dasharray: 50, 153;  
+  stroke-dashoffset: -153;
+}
+
+.svg-loader-segment {
+  transition:
+    transform $segment-duration $easing,
+    opacity $segment-duration / 2 + 0.25s $easing,
+    stroke $segment-duration / 2 + 0.25s $easing,;
+}
+
+#svg-lines {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  overflow: visible;
+  transform-origin: center 4vh;
+}
+
+.svg-data {
+  fill: none;
+  stroke-width: $stroke-width;
+  
+  &.-temp {
+    stroke: #F4814B;
+    stroke-dasharray: 20, 118;
+  }
+  
+  &.-cal {
+    stroke: $color-cal;
+    stroke-dasharray: 20, 113;
+  }
+  
+  &.-steps-bg {
+    stroke: #E0E1E0;
+    stroke-dasharray: 40, 100;
+    stroke-dashoffset: -60;
+  }
+  
+  &.-steps {
+    stroke: $color-primary;
+    stroke-dasharray: 20, 73;
+    stroke-dashoffset: -53;
+  }
+  
+  &.-heart {
+    stroke: #9965AA;
+    stroke-dasharray: 50, 200;
+    stroke-dashoffset: -150;
+  }
+}
+
+.svg-activity-fill {
+  fill: #C4E4F8;
+}
+
+.svg-activity-line {
+  fill: none;
+  stroke: #65BCEA;
+  stroke-miterlimit: 10;
+  stroke-width: $stroke-width / 2;
+}
+
+.svg-activity-avg, .svg-activity-indicator {
+  fill: none;
+  stroke: $color-secondary;
+  stroke-width: $stroke-width / 2;
+  mix-blend-mode: multiply;
+}
+
+.svg-activity-fill, .svg-activity-line {
+  transform: translateY(10vh);
+  opacity: 0;
+}
+
+html, body {
+  font-size: 2.5vh;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.meta {
+  flex-basis: calc(80% - #{$app-width});
+  
+  > * {
+    transition: none !important;
+  }
+
+  > h1 {
+    font-weight: 300;
+    font-size: 32px;
+    color: white;
+  }
+  
+  > p {
+    line-height: 1.3;
+    font-size: 16px;
+    color: rgba(white, 0.6);
+  }
+  
+  a {
+    color: rgba(white, 0.6);
+    
+    &:hover {
+      color: white;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    display: none;
+  }
+}
+
+.route {
+  display: none;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  position: relative;
+}
