@@ -28,6 +28,8 @@ ps: 下面的每个demo都发布在线上了，可以正常访问，毕竟以展
 
 <a href="http://fridolph.top/my-demo/css3/transportation-hover/index.html" target="_blank">Hover与background结合~ 实现的短动画</a>
 
+<a href="#" target="_blank">地址待添加 - translate3d-card</a>
+
 
 ## component
 
