@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  width: 100%;
+}
+
+.scene-wrap {
+  width: 100%; overflow: hidden;  
+}
+
+.scene-wrap .scene {
+  width: 1200px;
+  margin: 0 auto;
+  position:relative;    
+}
+
+.scene-wrap .scene li {
+  width: 1200px;    
+}
+
+.scene-wrap .scene img {
+  position:absolute;
+  left: 50%;
+  top: 0;
+}
