@@ -1,0 +1,25 @@
+{
+  "name": "my-program",
+  "version": "1.0.0",
+  "description": "搜集整理了各种类型的demo，并对之进行了分类，以便随时使用，如对您有帮助，`请star下`，再fork拿去改成你想要的效果，谢谢。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fridolph/my-program.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fridolph/my-program/issues"
+  },
+  "homepage": "https://github.com/Fridolph/my-program#readme",
+  "dependencies": {
+    "koa": "^2.5.0",
+    "koa-router": "^7.4.0",
+    "koa-send": "^4.1.3",
+    "koa-static": "^4.0.2"
+  }
+}
