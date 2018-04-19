@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>图片预加载 —— 之有序加载</title>
+  <style>
+    html, body{height:100%;}
+    a{text-decoration: none;}
+    .box{text-align: center;}
+    .box img {max-width:100%;}
+    .btn{
+      display: inline-block;margin: 0 25px;padding:0 10px;
+      height:30px;line-height:30px; color:#333;
+      background:#fff; border:1px solid #ccc;
+    }    
+  </style>
+</head>
+<body>
+  <a style="position: absolute; top: 0; right: 0; border: 0;" href="https://github.com/Fridolph/my-program"><img src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+  <div class="box">
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494902309&di=2b89268fb819543b81e14e559cd2690f&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1403%2F10%2Fc0%2F31937338_1394423911198.jpg" id="img" />
+    <p>
+      <a href="javascript:;" class="btn" data-control="prev">上一页</a>
+      <a href="javascript:;" class="btn" data-control="next">下一页</a>
+    </p>
+  </div>
+</body>
+<script src="./js/jquery.js"></script>
+<script src="./js/preload.js"></script>
+<script>
+  var images = [
+    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494902309&di=2b89268fb819543b81e14e559cd2690f&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1403%2F10%2Fc0%2F31937338_1394423911198.jpg",
+    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494307586650&di=402060852bc898f1497dedc517f62c74&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1307%2F18%2Fc0%2F23470107_1374134535176.jpg",
+    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494307586649&di=f5552566d5a53602ebb1b3c57bef1a33&imgtype=0&src=http%3A%2F%2Fpsp.tgbus.com%2FUploadFiles%2F201310%2F20131019141412314.jpg",
+    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494307586648&di=bf8afac860738d995443bc06e7b5e0a2&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fc2cec3fdfc0392454337e2318594a4c27d1e2509.jpg",
+    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494307698265&di=b85d6492870ac921ad38e1730da63829&imgtype=0&src=http%3A%2F%2Fi5.265g.com%2Fimages%2F201609%2F201609191724194567.jpg",
+    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494309269631&di=f61cb90a4eb8d0f720a5f3e7d73b7e28&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farchive%2F01459d3bd99d0f3d13cd8be0dcc9e06be4ba9533.jpg",
+    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494309269629&di=8302413b8eedbe4f16ce03fc26cfcbab&imgtype=0&src=http%3A%2F%2Fpsp.tgbus.com%2FUploadFiles%2F201207%2F20120713115855966.jpg",
+    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494309269628&di=82fe23a51d0193055dde2a7133c05ffe&imgtype=0&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Farchive%2Ffabf5eb90818a40fc9c2f86922afcb3ebb23f317.jpg",
+    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1494309269626&di=b58853a1baec8508e169d6e910b44c15&imgtype=0&src=http%3A%2F%2Fimglf1.ph.126.net%2FaifUIlcLbVi7P4vIPUGAvQ%3D%3D%2F1860831071134213216.jpg"
+  ];
+ 
+  var len = images.length,
+      index = 0;
+
+  // orderLoad();
+
+  // // 有序预加载
+  // function orderLoad() {
+  //   var imgObj = new Image();
+
+  //   $(imgObj).on('load error', function() {
+
+  //     if (count >= len) {
+  //       // 所有图片都已加载完毕
+  //     } else {
+  //       // 若图片没加载完继续调用load事件
+  //       orderLoad();
+  //     }
+
+  //     count++;
+
+  //   });
+
+  //   imgObj.src = images[count];
+  // }
+
+  $.preload(images, {
+    order: 'ordered'
+  });
+
+  $(".btn").on('click', function() {
+    if ($(this).data('control') === 'prev') { // 上一张      
+      index = Math.max(0, --index);
+    } else { // 下一张
+      index = Math.min(len - 1, ++index);
+    }
+
+    document.title = `${index + 1}/${len}`;
+    $("#img").attr("src", images[index]);
+  });
+
+</script>
+</html>

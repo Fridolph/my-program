@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>纯CSS3实现的滚动条</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+    }
+    
+    header {
+      position: fixed;
+      top: 0;
+      height: 125px;
+      width: 100%;
+      background: white;
+    }
+    
+    main {
+      margin-top: 128px;
+    }
+    
+    @supports (height: 100vh) {
+      body {
+        background: linear-gradient(to right top, #0089f2 50%, #DDD 50%);
+        background-size: 100% calc(100% - 100vh + 129px);
+        background-repeat: no-repeat;
+      }
+      body:before {
+        content: '';
+        position: fixed;
+        top: 128px;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+        background: white;
+      }
+    }
+
+    body {
+      font-family: "Open Sans";
+      font-size: 1.25rem;
+    }
+    
+    main,
+    header {
+      padding: 10px 10%;
+      box-sizing: border-box;
+    }
+    div.demo {
+      width:100%;
+      height:200px;
+      background: linear-gradient(to right top, #0089f2 50%, #DDD 50%);
+    }
+    div.demo1 {
+      width:100%;
+      height:200px;
+      background: linear-gradient(to right top, #0089f2 50%, #DDD 50%);
+      position:relative;
+    }
+    div.demo1:before {
+      content: '';
+      position: absolute;
+      top: 128px;
+      bottom: 0;
+      width: 100%;
+      z-index: -1;
+      background: white;
+    }
+  </style>
+</head>
+
+<body>  
+  <header>
+    <h1>你也许不敢信，这是由纯CSS3实现的滚动条</h1>
+    <a style="position: absolute; top: 0; right: 0; border: 0;" href="https://github.com/Fridolph/my-program"><img src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+  </header>
+  <main>
+    <p>
+      这个效果是怎么实现的？跟着我一步一步来做吧，其实并没有你想象的那么复杂！
+    </p>
+    <p>从布局上来看，由三个部分组成， body，作为父容器，里面只有两个子元素，header和main</p>
+    <p>
+      这是header的样式：
+      <pre>
+        header {
+          position: fixed;
+          top: 0;
+          height: 125px;
+          width: 100%;
+          background: white;
+        }
+      </pre>
+      这里我们用fixed对header进行了固定定位，这样，无论怎样滚动，header部分都将在视口显示，这里我们让宽度为100%，给定了高度（重要，不给高度，会由里面的内容来决定，但下面的main不会自适应到header的高度，会造成塌陷）
+    </p>
+    <p>
+      然后我们继续看，
+      <pre>
+        main {
+          margin-top: 128px;
+        }
+      </pre>
+      这里给了main这个子元素margin-top:128px，这里不难理解，因为fixed的关系，脱离了文档流，main是在正常文档流中的，会顶到上面去，这样，我们给一个margin-top后就留出了header的位置来。
+
+    </p>
+    <p>
+      好的，那么我们接着继续看，重点部分来了，直接上代码段：
+      <pre>
+        @supports (height: 100vh) {
+          body {
+            background: linear-gradient(to right top, #0089f2 50%, #DDD 50%);
+            background-size: 100% calc(100% - 100vh + 129px);
+            background-repeat: no-repeat;
+          }
+          body:before {
+            content: '';
+            position: fixed;
+            top: 128px;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+            background: white;
+          }
+        }
+      </pre>
+
+      这里的@supports，是CSS3中新增的，意思为：是否支持某CSS属性声明的AT规则，浏览器对齐支持性越来越好了，鄙人已经在实际项目中使用了这个规则，干嘛用呢？说来惭愧，当作hack使用了。具体可以参考前端界css大牛 张鑫旭老师的博客 <a href="http://www.zhangxinxu.com/wordpress/2015/08/know-css-at-rules/">http://www.zhangxinxu.com/wordpress/2015/08/know-css-at-rules/</a> 这里把地址给出来了，顺便也是为增加文章的篇幅= = 让sroll的效果能够更明显，原谅我说了这么多的废话，我们继续。
+    </p>
+    <p>
+      background: linear-gradient(to right top, #0089f2 50%, #DDD 50%); 我们知道是写渐变对吧，沿着右上渐变。好的，你可以在脑海中现象这样的一个渐变是什么效果了。好了，我们还是拿出来，
+      <pre>
+        div {
+          width:200px;
+          height:200px;
+          background: linear-gradient(to right top, #0089f2 50%, #DDD 50%);
+        }
+      </pre>
+      <div style="width:200px;height:200px;background: linear-gradient(to right top, #0089f2 50%, #DDD 50%);">.</div>
+    </p>
+    <p>
+      看到这个例子了吧？ background-size: 100% calc(100% - 100vh + 129px); 然后是这段，background-size是css3新增的，可以调整背景的大小，（这不是废话吗）然后呢，宽度永远为100%, 而后面一个是代表高度，接着我们又可以拆开来分析了：
+
+      background-size: 100% <b>calc(100% - 100vh + 129px)</b>; 这里的100%，没错，是相对于元素当前设置的高度的，总高度 - 100vh 就是滚动高度scroll了，这个不难理解吧？ 那么滚动高度 + 129（之前我们让main子元素margin-top:128px还记得吧？） 就是文章位置相对于总高度的所占百分比了。。。。。 
+
+    </p>
+
+    <p>好吧，我把我自己都要说晕了，不知道看官您晕否？ 是的，我把刚才的demo放大你就能感受到这个CSS3滚动条的原理了。<br>
+      <pre>
+        div.demo {
+          width:100%;
+          height:200px;
+          background: linear-gradient(to right top, #0089f2 50%, #DDD 50%);
+          position:relative;
+        }        
+      </pre>
+      <div class="demo">.</div>
+      
+    </p>
+    <p>
+      现在我们再用一个 :before 伪元素把这个盖住
+      <pre>
+        div.demo:before {
+          content: '';
+          position: absolute;
+          top: 128px;
+          bottom: 0;
+          width: 100%;
+          z-index: -1;
+          background: white;
+        }
+      </pre>
+      <div class="demo1">.</div>
+
+      我们知道，上面的header能把下面的盖住，是因为他们不是属于同一个BFC的， 现在这个BFC的伪元素把他多余的部分盖住了，只留一根线，就形成了 我们所谓的进度条~ 原理就是这么简单。但是要注意，如果我们在下面再用这样的方式，多了后就会把元素顶出来了。
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      这里我多写点段落来看看。看到了吧，我们的div盒子已经跑出去了，这是因为给了他 position ，设置除了static外的其他属性，他将拥有自己的BFC, 虽然是relative ，他的位置没有变，但相对于这个文档流的层级中，已经往更高的位置去了，所以我们就会看到他从这个大盒子中显出来了。
+    </p>
+
+    <p>
+      有办法能解决吗？ 对父级容器设置overflow:hidden;是没有用的， 因为主要原因是 div盒子的层级已经高于原先的文档流了， 我们可以用js辅助来实现，滚动到差不多的位置时，我们将 position变为static让他回到正常的文档流，这样就能被盖住了。
+    </p>
+
+    <p>
+      小结：建议在内容器里都使用相同的层级布局，避免层级提升，这样能保持一致性，更便于管理和维护。
+    </p>
+  </main>
+</body>
+
+</html>

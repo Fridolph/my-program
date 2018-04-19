@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>简单时间线DEMO</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <a style="position: absolute; top: 0; right: 0; border: 0;" href="https://github.com/Fridolph/my-program"><img src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+  <section class="intro">
+    <div class="container">
+      <h1>向下滑动，开始动画 &darr;</h1>
+    </div>
+  </section>
+
+  <section class="timeline">
+    <ul>
+      <li>
+        <div>
+          <time>Vue.js是什么</time>Vue.js（读音 /vjuː/，类似于 view） 是一套构建用户界面的渐进式框架。
+          与其他重量级框架不同的是，Vue 采用自底向上增量开发的设计。Vue 的核心库只关注视图层，它不仅易于上手，
+          还便于与第三方库或既有项目整合。另一方面，当与单文件组件和 Vue 生态系统支持的库结合使用时，Vue 也完全能够为复杂的单页应用程序提供驱动。
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>起步</time>官方指南假设你已有 HTML、CSS 和 JavaScript 中级前端知识。如果你刚开始学习前端开发，
+          将框架作为你的第一步可能不是最好的主意——掌握好基础知识再来！之前有其他框架的使用经验对于学习 Vue.js 是有帮助的，但这不是必需的。
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>声明式渲染</time>我们已经生成了我们的第一个 Vue 应用！看起来这跟单单渲染一个字符串模板非常类似，
+          但是 Vue 在背后做了大量工作。现在数据和 DOM 已经被绑定在一起，所有的元素都是响应式的。我们如何知道？
+          打开你的浏览器的控制台（就在这个页面打开），并修改 app.message，你将看到上例相应地更新。
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>NO.4</time>
+          <span>可以添加文字继续后面的</span>
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>NO.5</time>
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>NO.6</time>
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>NO.7</time> 
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>NO.8</time> 
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>NO.9</time> 
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>NO.10</time>
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>NO.11</time>
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>NO.12</time> 
+        </div>
+      </li>
+    </ul>
+  </section>
+  <script>
+    (function () {
+      // 选择所有的li
+      var items = document.querySelectorAll(".timeline li");
+
+      // check if an element is in viewport
+      // 让元始终屏幕内显示
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      function callbackFunc() {
+        for (var i = 0; i < items.length; i++) {
+          if (isElementInViewport(items[i])) {
+            items[i].classList.add("in-view");
+          }
+        }
+      }
+
+      // 事件监听
+      window.addEventListener("load", callbackFunc);
+      window.addEventListener("resize", callbackFunc);
+      window.addEventListener("scroll", callbackFunc);
+
+    })();
+  </script>
+</body>
+
+</html>
