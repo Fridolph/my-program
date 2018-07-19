@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.code-wrapper {
+    flex: 1;
+    height: 50%;
+    padding: 10px;
+}
+.previer-wrapper {
+    flex: 1;
+}
+#code {
+    overflow: auto;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace
+}
+.actions {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.actions > a {
+    margin: 10px 30px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.button-tiny {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 14px;
+}
+
