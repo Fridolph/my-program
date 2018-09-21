@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.w1200 {
+	width: 1200px;
+	margin: 0 auto;
+	height: auto;
+}
+.w1200:after{
+	content: "";
+	width: 0;
+	height: 0;
+	display: block;
+	clear: both;
+}
+.ai_card{width: 100%;height: auto;overflow: hidden;padding-bottom: 80px;}
+.ai_card h2.t {
+	padding-top: 80px;
+	font-size: 36px;
+	text-align: center;
+	font-weight: normal;
+}
+
+.ai_card p.sub_t {
+	padding-top: 15px;
+	font-size: 16px;
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+.ai_card ul {
+	padding-bottom: 70px;
+}
+
+.ai_card ul li {
+	float: left;
+	position: relative;
+	width: 398px;
+	height: 428px;
+	border: 1px solid #e7e7e7;
+	margin-left: -1px;
+	z-index: 10;
+}
+
+.ai_card ul li:nth-child(1) {
+	background: url(../images/ai_bg1.jpg) no-repeat left top;
+}
+
+.ai_card ul li:nth-child(2) {
+	background: url(../images/ai_bg2.jpg) no-repeat left top;
+}
+
+.ai_card ul li:nth-child(3) {
+	background: url(../images/ai_bg3.jpg) no-repeat left top;
+}
+
+.ai_card ul li:before {
+	content: "";
+	width: 0px;
+	height: 2px;
+	background: #00b8ff;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 999;
+	transition: 1s;
+}
+
+.ai_card ul li .info {
+	position: absolute;
+	top: 80px;
+	width: 398px;
+	left: 0;
+	transition: 0.5s;
+}
+
+.ai_card ul li .info .img {
+	width: 398px;
+	height: 90px;
+	text-align: center;
+}
+
+.ai_card ul li .info h3 {
+	font-weight: normal;
+	color: #333;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.ai_card ul li .info p {
+	width: 255px;
+	height: 85px;
+	line-height: 24px;
+	margin: 0 auto;
+	color: #73747b;
+	font-size: 14px;
+}
+
+.ai_card ul li a.btn {
+	position: absolute;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	left: 139px;
+	bottom: 50px;
+	color: #fff;
+	background: #00b8ff;
+	opacity: 0;
+	border-radius: 2px;
+	transition: 0.5s;
+	font-size: 16px;
+	text-align: center;
+}
+
+.ai_card ul li.active {
+	box-shadow: 0 2px 20px rgba(175, 175, 175, 0.3);
+}
+
+.ai_card ul li.active:before {
+	width: 398px;
+	height: 2px;
+}
+
+.ai_card ul li.active .info {
+	top: 50px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+
+.ai_card ul li.active a.btn {
+	opacity: 1;
+}
