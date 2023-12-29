@@ -12,11 +12,11 @@ ps: 下面的每个demo都发布在线上了，可以正常访问，毕竟以展
 
 <a href="http://fridolph.wang/my-demo/css3/canvas-animation-logo/index.html" target="_blank">Canvas Logo</a>
 
-<a href="http://fridolph.wang/my-demo/css3/css3-scroll/index.html" target="_blank">纯CSS3实现Scroll进度条</a>
+<a href="https://github.com/Fridolph/my-program/blob/master/public/animation-css3-js/scroll-progress-bar/index.html" target="_blank">纯CSS3实现Scroll进度条</a>
 
 <a href="http://fridolph.wang/my-demo/css3/css3-transform/index.html" target="_blank">CSS3 Transform效果一览</a>
 
-<a href="http://fridolph.wang/my-demo/css3/fullscreen-background-animation/index.html" target="_blank">CSS3实现的全屏幻灯片图片切换</a> 
+<a href="https://github.com/Fridolph/my-program/blob/master/public/animation-css3-js/fullscreen-background-animation/index.html" target="_blank">CSS3实现的全屏幻灯片图片切换</a> 
 
 <a href="http://fridolph.wang/my-demo/css3/icon-toggle/index.html" target="_blank">CSS3制作ICON小图标</a> 
 
