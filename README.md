@@ -36,17 +36,32 @@ ps: 下面的每个demo都发布在线上了，可以正常访问，毕竟以展
 
 ### 01_基本网格布局
 
-<a href="https://fridolph.github.io/my-program/public/layout/flex/01_yufa.html" target="_blank">01_flex语法篇</a>
+<a href="https://fridolph.github.io/my-program/public/layouts/flex/01_yufa.html" target="_blank">01_flex语法篇</a>
 
 ### 02_flex布局实战1 骰子布局
-<a href="https://fridolph.github.io/my-program/public/layout/flex/02_demo.html" target="_blank">02_flex-demo布局实战</a>
+<a href="https://fridolph.github.io/my-program/public/layouts/flex/02_demo.html" target="_blank">02_flex-demo布局实战</a>
 
 ### 03_flex布局实战2 骰子布局
-<a href="https://fridolph.github.io/my-program/public/layout/flex/03_demo.html" target="_blank">02_flex-demo布局实战2</a>
+<a href="https://fridolph.github.io/my-program/public/layouts/flex/03_demo.html" target="_blank">02_flex-demo布局实战2</a>
 
-**其他布局范例** 以下是我自己的练习DEMO
+### 其他布局范例 
 
-// Todo 改地址了，重新整理
+以下是我自己的练习DEMO
+
+<a href="https://fridolph.github.io/my-program/public/layouts/base-layout/01base.html" target="_blank">01_基本网格布局</a>
+
+<a href="https://fridolph.github.io/my-program/public/layouts/base-layout/02percent.html" target="_blank">02_百分比布局</a>
+
+<a href="https://fridolph.github.io/my-program/public/layouts/base-layout/03grail.html" target="_blank">03_圣杯布局</a>
+
+<a href="https://fridolph.github.io/my-program/public/layouts/base-layout/04input.html" target="_blank">04_输入框的布局</a>
+
+<a href="https://fridolph.github.io/my-program/public/layouts/base-layout/05suspend.html" target="_blank">05_悬挂式布局</a>
+
+<a href="https://fridolph.github.io/my-program/public/layouts/base-layout/06sticky-footer.html" target="_blank">06_固定的底栏</a>
+
+<a href="https://fridolph.github.io/my-program/public/layouts/base-layout/07fluid.html" target="_blank">07fluid</a>
+
 
 ## jQuery
 
@@ -77,8 +92,17 @@ ps: 下面的每个demo都发布在线上了，可以正常访问，毕竟以展
 <a href="https://fridolph.github.io/my-program/public/jquery/waterfall-image-layout/index.html" target="_blank">瀑布流 - 可自定宽高</a> 
 ---
 
-## css + js 简单效果
+## css + js 其他简单效果
 
-<a href="https://fridolph.github.io/my-program/public/animation-css3-js/card-change-layout/index.html" target="_blank">卡片布局 - 及卡片详情</a> 
+<a href="https://fridolph.github.io/my-program/public/other/card-change-layout/index.html" target="_blank">卡片布局 - 及卡片详情</a> 
+
+<a href="https://fridolph.github.io/my-program/public/other/pull-to-refresh/index.html" target="_blank">移动端 - 白屏优化demo</a> 
+
+<a href="https://fridolph.github.io/my-program/public/other/radio-buttons/index.html" target="_blank">components - radio-buttons</a> 
+
+<a href="https://fridolph.github.io/my-program/public/other/scroll-progress-bar/index.html" target="_blank">纯CSS3实现的滚动条</a> 
+
+# 写在最后 
 
 如果里面的demo对您有参考或帮助，请Star + Fork，谢谢！
+
