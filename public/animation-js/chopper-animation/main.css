@@ -26,8 +26,8 @@ body {
 }
 .actions {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 80px;
+    top: 20px;
     display: flex;
     flex-direction: column;
 }
