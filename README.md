@@ -4,20 +4,96 @@
 
 ps: 下面的每个demo都发布在线上了，可以正常访问，毕竟以展示为主
 
-## CSS3 相关效果
+做了个简单首页可作为导航 - 也算个demo <a href="https://fridolph.github.io/my-program/views/index.html" target="_blank">我的主页</a> 
 
-对，这里所有的demo大多以展示为主，运用了CSS3，没有添加额外JS就完成，所以都添加到了该分类下。至于更多的细节分类，以后再来实现了
-
-// Todo 改地址了，重新整理
-
-
-<a href="https://fridolph.github.io/my-program/public/animation-css3-js/card-op/index.html" target="_blank">海贼王之 - 卡片切换效果</a> 
-
-## component
+## CSS - transition 过渡相关效果 
 
 这个目录下一来是对所写demo进行分类，这是组件，也就是由多个小模块构成，放到该目录下以后也方便样式与结构的重用。而上面的CSS3是单纯来展示的，这里相当于筛选了一道（我可能会复用到的）
 
-// Todo 改地址了，重新整理
+<a href="https://fridolph.github.io/my-program/public/hover-transition/transform-effect/index.html" target="_blank">CSS3 Transform常见效果一览</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/自制loading/index.html" target="_blank">自制loading</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/iconHover效果/index.html" target="_blank">iconHover效果</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/linear-gradient/index.html" target="_blank">linear-gradient</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/text-hover/index.html" target="_blank">text-hover</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/buttons-box-shadow/index.html" target="_blank">buttons-box-shadow</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/科技感炫酷menu/index.html" target="_blank">未来派3D悬停效果</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/里程图片/index.html" target="_blank">里程图片</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/竖menubar/index.html" target="_blank">竖状hover_menu</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/悬停菜单/index.html" target="_blank">悬停菜单</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/悬停卡片/index.html" target="_blank">悬停卡片</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/自制表情/index.html" target="_blank">自制表情</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/card-hover/index.html" target="_blank">card-hover</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/card-hover-anime/index.html" target="_blank">card-hover-anime</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/card-op/index.html" target="_blank">card-op</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/css3-count-showtime/index.html" target="_blank">css3-count-showtime</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/hover卡片2/index.html" target="_blank">hover卡片2</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/tooltip/index.html" target="_blank">自制简易tooltip</a> 
+
+<a href="https://fridolph.github.io/my-program/public/hover-transition/transform-perspective/index.html" target="_blank">transform-perspective</a> 
+
+## CSS - animation 动画相关效果
+
+对，这里所有的demo大多以展示为主，运用了CSS3，没有添加额外JS就完成，所以都添加到了该分类下。至于更多的细节分类，以后再来实现了
+
+<a href="https://fridolph.github.io/my-program/public/animation-js/chopper-animation/index.html" target="_blank">自动画一个乔巴</a> 
+
+<a href="https://fridolph.github.io/my-program/public/animation-js/fullscreen-background-animation/index.html" target="_blank">全屏特效纯css实现</a> 
+
+<a href="https://fridolph.github.io/my-program/public/animation-js/icon-toggle-animation/index.html" target="_blank">ICON-toggle 为每个效果添加了对应className</a> 
+
+<a href="https://fridolph.github.io/my-program/public/animation-js/loading-love/index.html" target="_blank">css3-loading-love</a> 
+
+<a href="https://fridolph.github.io/my-program/public/animation-js/login-focus-line-animation/index.html" target="_blank">自动焦点登录框</a> 
+
+<a href="https://fridolph.github.io/my-program/public/animation-js/menu-circular-toggle/index.html" target="_blank">纯CSS3实现圆型菜单效果</a> 
+
+<a href="https://fridolph.github.io/my-program/public/animation-js/menu-toggle-animation/index.html" target="_blank">css3-toggle-menu</a> 
+
+<a href="https://fridolph.github.io/my-program/public/animation-js/scroll-timeline/index.html" target="_blank">简单时间线DEMO</a> 
+
+<a href="https://fridolph.github.io/my-program/public/animation-js/slide-animation/index.html" target="_blank">全屏栅格背景动画</a> 
+
+<a href="https://fridolph.github.io/my-program/public/animation-js/text-animation/index.html" target="_blank">文字特效动画</a> 
+
+
+### loading-demo
+
+通过加载状态事件制作进度条
+
+- document.onreadystatechange 页面加载状态改变时的事件
+- document.readyState 返回当前文档的状态
+
+* uninitialized 还未开始载入
+* loading 载入中
+* interactive 已加载，文档与用户可以开始交互
+* complete 载入完成
+
+<a href="https://fridolph.github.io/my-program/public/animation-js/progress-demo/demo1.html" target="_blank">定时器的进度条</a> 
+
+<a href="https://fridolph.github.io/my-program/public/animation-js/progress-demo/demo1.html" target="_blank">定时器的进度条2</a> 
+
+<a href="https://fridolph.github.io/my-program/public/animation-js/progress-demo/demo1.html" target="_blank">定时器的进度条3</a> 
+
+<a href="https://fridolph.github.io/my-program/public/animation-js/progress-demo/demo1.html" target="_blank">自己来制作简单的css3进度条</a> 
+
+<a href="https://fridolph.github.io/my-program/public/animation-js/progress-demo/demo1.html" target="_blank">定位在头部的进度条</a> 
 
 
 ## Layout - 布局
@@ -62,8 +138,17 @@ ps: 下面的每个demo都发布在线上了，可以正常访问，毕竟以展
 
 <a href="https://fridolph.github.io/my-program/public/layouts/base-layout/07fluid.html" target="_blank">07fluid</a>
 
+## Canvas 实现的动画效果
 
-## jQuery
+<a href="https://fridolph.github.io/my-program/public/canvas/change-background/index.html" target="_blank">点击烟花效果 - 自动切换背景图</a> 
+
+<a href="https://fridolph.github.io/my-program/public/canvas/colorful-gallery/index.html" target="_blank">根据图片提取相似色背景</a> 
+
+<a href="https://fridolph.github.io/my-program/public/canvas/logo-animation/index.html" target="_blank">一个简单的 LOGO动画</a> 
+
+<a href="https://fridolph.github.io/my-program/public/canvas/walking-dog/index.html" target="_blank">Walking Dog</a> 
+
+## jQuery 实现相关特效
 
 一些用jQuery完成的demo，思路和布局等代码可以在项目中直接借鉴
 
@@ -90,7 +175,7 @@ ps: 下面的每个demo都发布在线上了，可以正常访问，毕竟以展
 <a href="https://fridolph.github.io/my-program/public/jquery/shopping-cart/index.html" target="_blank">模拟购物车购物数量、结算功能</a> 
 
 <a href="https://fridolph.github.io/my-program/public/jquery/waterfall-image-layout/index.html" target="_blank">瀑布流 - 可自定宽高</a> 
----
+
 
 ## css + js 其他简单效果
 
