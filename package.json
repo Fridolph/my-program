@@ -1,6 +1,7 @@
 {
   "name": "my-program",
   "version": "1.0.0",
+  "packageManager": "pnpm@8.15.9",
   "description": "搜集整理了各种类型的demo，并对之进行了分类，以便随时使用，如对您有帮助，`请star下`，再fork拿去改成你想要的效果，谢谢。",
   "main": "index.js",
   "scripts": {
