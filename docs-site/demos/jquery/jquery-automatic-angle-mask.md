@@ -34,7 +34,7 @@ description: 一款jQuery判断鼠标划入图片方向显示遮罩层特效代�
 ## 在线体验
 
 - [打开原始 Demo 页面](/jquery/automatic-angle-mask/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/jquery/automatic-angle-mask)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/jquery/automatic-angle-mask)
 - [返回 jQuery 特效 分类](../)
 
 ## 目录结构

@@ -34,7 +34,7 @@ description: 文字 hover 效果集合，适合做标题强调与链接状态设
 ## 在线体验
 
 - [打开原始 Demo 页面](/hover-transition/text-hover/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/hover-transition/text-hover)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/text-hover)
 - [返回 CSS 过渡效果 分类](../)
 
 ## 目录结构

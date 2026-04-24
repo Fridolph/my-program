@@ -34,7 +34,7 @@ description: 通过 box-shadow 变化强化按钮 hover 态，适合做操作反
 ## 在线体验
 
 - [打开原始 Demo 页面](/hover-transition/buttons-box-shadow/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/hover-transition/buttons-box-shadow)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/buttons-box-shadow)
 - [返回 CSS 过渡效果 分类](../)
 
 ## 目录结构

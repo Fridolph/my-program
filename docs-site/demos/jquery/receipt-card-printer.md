@@ -34,7 +34,7 @@ description: 模拟票据或卡片自动打印生成的过渡动画，适合作�
 ## 在线体验
 
 - [打开原始 Demo 页面](/jquery/card-auto-generate/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/jquery/card-auto-generate)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/jquery/card-auto-generate)
 - [返回 jQuery 特效 分类](../)
 
 ## 目录结构

@@ -34,7 +34,7 @@ description: 多组 CSS3 渐变背景示例，适合参考卡片、区块和按�
 ## 在线体验
 
 - [打开原始 Demo 页面](/hover-transition/linear-gradient/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/hover-transition/linear-gradient)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/linear-gradient)
 - [返回 CSS 过渡效果 分类](../)
 
 ## 目录结构

@@ -35,7 +35,7 @@ description: 点击触发烟花并切换背景图，适合作为互动型视觉�
 ## 在线体验
 
 - [打开原始 Demo 页面](/canvas/change-background/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/canvas/change-background)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/canvas/change-background)
 - [返回 Canvas 动画 分类](../)
 
 ## 目录结构

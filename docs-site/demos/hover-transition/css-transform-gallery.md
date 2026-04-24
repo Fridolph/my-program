@@ -34,7 +34,7 @@ description: 集中展示 rotate、scale 和 skew 等常见变形效果，适合
 ## 在线体验
 
 - [打开原始 Demo 页面](/hover-transition/transform-effect/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/hover-transition/transform-effect)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/transform-effect)
 - [返回 CSS 过渡效果 分类](../)
 
 ## 目录结构

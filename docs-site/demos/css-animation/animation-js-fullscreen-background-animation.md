@@ -34,7 +34,7 @@ description: 全屏背景动画示例，适合用于活动页或着陆页首屏�
 ## 在线体验
 
 - [打开原始 Demo 页面](/animation-js/fullscreen-background-animation/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/animation-js/fullscreen-background-animation)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/animation-js/fullscreen-background-animation)
 - [返回 动画效果 分类](../)
 
 ## 目录结构

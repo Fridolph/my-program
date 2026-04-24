@@ -34,7 +34,7 @@ description: 通过图标形态切换表达状态变化，适合作为按钮反�
 ## 在线体验
 
 - [打开原始 Demo 页面](/animation-js/icon-toggle-animation/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/animation-js/icon-toggle-animation)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/animation-js/icon-toggle-animation)
 - [返回 动画效果 分类](../)
 
 ## 目录结构

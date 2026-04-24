@@ -34,7 +34,7 @@ description: 多个骰子点位布局练习，适合学习更复杂的 Flex 排�
 ## 在线体验
 
 - [打开原始 Demo 页面](/layouts/flex/03_demo.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/layouts/flex)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/layouts/flex)
 - [返回 布局方案 分类](../)
 
 ## 目录结构

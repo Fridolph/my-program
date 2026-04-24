@@ -34,7 +34,7 @@ description: 背景纹理实验示例，可作为页面氛围层或装饰层参�
 ## 在线体验
 
 - [打开原始 Demo 页面](/css/background/1.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/css/background)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/css/background)
 - [返回 其他效果 分类](../)
 
 ## 目录结构

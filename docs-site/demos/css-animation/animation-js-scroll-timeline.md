@@ -34,7 +34,7 @@ description: 时间线滚动动画示例，适合参考分段式内容展示与�
 ## 在线体验
 
 - [打开原始 Demo 页面](/animation-js/scroll-timeline/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/animation-js/scroll-timeline)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/animation-js/scroll-timeline)
 - [返回 动画效果 分类](../)
 
 ## 目录结构

@@ -34,7 +34,7 @@ description: 一款jQuery输入框回车/点击按钮添加标签网页特效，
 ## 在线体验
 
 - [打开原始 Demo 页面](/jquery/label-add-jquery/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/jquery/label-add-jquery)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/jquery/label-add-jquery)
 - [返回 jQuery 特效 分类](../)
 
 ## 目录结构

@@ -34,7 +34,7 @@ description: 一款原生JS实现购物车购物数量、结算功能代码，�
 ## 在线体验
 
 - [打开原始 Demo 页面](/jquery/shopping-cart/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/jquery/shopping-cart)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/jquery/shopping-cart)
 - [返回 jQuery 特效 分类](../)
 
 ## 目录结构

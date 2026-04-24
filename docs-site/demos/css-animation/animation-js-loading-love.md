@@ -34,7 +34,7 @@ description: 爱心主题的 Loading 动画，适合作为节日或趣味场景�
 ## 在线体验
 
 - [打开原始 Demo 页面](/animation-js/loading-love/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/animation-js/loading-love)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/animation-js/loading-love)
 - [返回 动画效果 分类](../)
 
 ## 目录结构

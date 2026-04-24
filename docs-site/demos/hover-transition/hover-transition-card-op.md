@@ -34,7 +34,7 @@ description: 卡片切换动效，适合参考内容卡 hover 态与层次切换
 ## 在线体验
 
 - [打开原始 Demo 页面](/hover-transition/card-op/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/hover-transition/card-op)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/card-op)
 - [返回 CSS 过渡效果 分类](../)
 
 ## 目录结构

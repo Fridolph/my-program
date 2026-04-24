@@ -34,7 +34,7 @@ AI 主题卡片 hover 动效，适合作为封面卡或内容入口视觉参考�
 ## 在线体验
 
 - [打开原始 Demo 页面](/hover-transition/悬停卡片/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/hover-transition/悬停卡片)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/悬停卡片)
 - [返回 CSS 过渡效果 分类](../)
 
 ## 目录结构

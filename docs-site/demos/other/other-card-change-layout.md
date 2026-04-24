@@ -34,7 +34,7 @@ description: 卡片点击后切换布局与详情视图，适合作为列表转�
 ## 在线体验
 
 - [打开原始 Demo 页面](/other/card-change-layout/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/other/card-change-layout)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/other/card-change-layout)
 - [返回 其他效果 分类](../)
 
 ## 目录结构

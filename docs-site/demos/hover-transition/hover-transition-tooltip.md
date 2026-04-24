@@ -34,7 +34,7 @@ description: 功能较完整的 Tooltip 演示，适合作为提示层定位与�
 ## 在线体验
 
 - [打开原始 Demo 页面](/hover-transition/tooltip/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/hover-transition/tooltip)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/tooltip)
 - [返回 CSS 过渡效果 分类](../)
 
 ## 目录结构

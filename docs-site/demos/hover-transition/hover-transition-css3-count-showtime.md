@@ -34,7 +34,7 @@ CSS3 计数展示效果，适合作为数据面板或统计卡片的视觉参考
 ## 在线体验
 
 - [打开原始 Demo 页面](/hover-transition/css3-count-showtime/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/hover-transition/css3-count-showtime)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/css3-count-showtime)
 - [返回 CSS 过渡效果 分类](../)
 
 ## 目录结构

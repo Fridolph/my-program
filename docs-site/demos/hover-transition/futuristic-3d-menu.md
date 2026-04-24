@@ -34,7 +34,7 @@ description: 科技感 3D 菜单效果，适合参考带空间感的导航动效
 ## 在线体验
 
 - [打开原始 Demo 页面](/hover-transition/科技感炫酷menu/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/hover-transition/科技感炫酷menu)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/科技感炫酷menu)
 - [返回 CSS 过渡效果 分类](../)
 
 ## 目录结构

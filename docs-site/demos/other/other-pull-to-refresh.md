@@ -34,7 +34,7 @@ description: 移动端下拉刷新交互演示，适合参考触摸反馈与状�
 ## 在线体验
 
 - [打开原始 Demo 页面](/other/pull-to-refresh/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/other/pull-to-refresh)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/other/pull-to-refresh)
 - [返回 其他效果 分类](../)
 
 ## 目录结构

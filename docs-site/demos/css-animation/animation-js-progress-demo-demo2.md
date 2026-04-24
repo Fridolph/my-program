@@ -34,7 +34,7 @@ description: 定时器进度条的第二种实现方式，适合对比动画节�
 ## 在线体验
 
 - [打开原始 Demo 页面](/animation-js/progress-demo/demo2.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/animation-js/progress-demo)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/animation-js/progress-demo)
 - [返回 动画效果 分类](../)
 
 ## 目录结构

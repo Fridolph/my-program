@@ -35,7 +35,7 @@ description: 纯 CSS 绘制的表情符号效果，适合学习简单图形拼�
 ## 在线体验
 
 - [打开原始 Demo 页面](/hover-transition/自制表情/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/hover-transition/自制表情)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/自制表情)
 - [返回 CSS 过渡效果 分类](../)
 
 ## 目录结构

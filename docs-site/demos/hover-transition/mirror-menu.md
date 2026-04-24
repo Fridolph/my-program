@@ -34,7 +34,7 @@ description: 竖向镜像菜单效果，适合学习列表 hover 反馈与透视
 ## 在线体验
 
 - [打开原始 Demo 页面](/hover-transition/竖menubar/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/hover-transition/竖menubar)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/竖menubar)
 - [返回 CSS 过渡效果 分类](../)
 
 ## 目录结构

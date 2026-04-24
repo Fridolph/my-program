@@ -34,7 +34,7 @@ description: 单元素实现的 Loading 动画，适合练习伪元素与关键�
 ## 在线体验
 
 - [打开原始 Demo 页面](/hover-transition/自制loading/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/hover-transition/自制loading)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/自制loading)
 - [返回 CSS 过渡效果 分类](../)
 
 ## 目录结构

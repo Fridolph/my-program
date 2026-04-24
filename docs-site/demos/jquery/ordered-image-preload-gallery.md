@@ -34,7 +34,7 @@ description: 按顺序预加载图片并切换展示，适合对比不同图片�
 ## 在线体验
 
 - [打开原始 Demo 页面](/jquery/image-preloading/index3.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/jquery/image-preloading)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/jquery/image-preloading)
 - [返回 jQuery 特效 分类](../)
 
 ## 目录结构

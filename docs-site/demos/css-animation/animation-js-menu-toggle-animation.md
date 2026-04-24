@@ -34,7 +34,7 @@ description: 菜单按钮切换动画示例，适合学习展开收起的动效�
 ## 在线体验
 
 - [打开原始 Demo 页面](/animation-js/menu-toggle-animation/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/animation-js/menu-toggle-animation)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/animation-js/menu-toggle-animation)
 - [返回 动画效果 分类](../)
 
 ## 目录结构

@@ -34,7 +34,7 @@ description: 利用页面滚动进度驱动顶部进度条，适合作为长文�
 ## 在线体验
 
 - [打开原始 Demo 页面](/other/scroll-progress-bar/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/other/scroll-progress-bar)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/other/scroll-progress-bar)
 - [返回 其他效果 分类](../)
 
 ## 目录结构

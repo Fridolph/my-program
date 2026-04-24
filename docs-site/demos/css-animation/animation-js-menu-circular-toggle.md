@@ -34,7 +34,7 @@ description: 使用纯 CSS3 实现的圆形菜单展开效果，适合学习 tra
 ## 在线体验
 
 - [打开原始 Demo 页面](/animation-js/menu-circular-toggle/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/animation-js/menu-circular-toggle)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/animation-js/menu-circular-toggle)
 - [返回 动画效果 分类](../)
 
 ## 目录结构

@@ -34,7 +34,7 @@ description: 一款jQuery眼睛跟随鼠标转动动画网页特效，该特效�
 ## 在线体验
 
 - [打开原始 Demo 页面](/jquery/mousemove-animation-eye/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/jquery/mousemove-animation-eye)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/jquery/mousemove-animation-eye)
 - [返回 jQuery 特效 分类](../)
 
 ## 目录结构

@@ -34,7 +34,7 @@ description: 登录框焦点线条动画，适合参考表单输入态与聚焦�
 ## 在线体验
 
 - [打开原始 Demo 页面](/animation-js/login-focus-line-animation/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/animation-js/login-focus-line-animation)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/animation-js/login-focus-line-animation)
 - [返回 动画效果 分类](../)
 
 ## 目录结构

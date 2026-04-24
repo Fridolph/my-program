@@ -34,7 +34,7 @@ description: 将进度条固定在页面顶部，适合模拟阅读进度或加�
 ## 在线体验
 
 - [打开原始 Demo 页面](/animation-js/progress-demo/demo5.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/animation-js/progress-demo)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/animation-js/progress-demo)
 - [返回 动画效果 分类](../)
 
 ## 目录结构

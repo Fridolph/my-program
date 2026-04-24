@@ -34,7 +34,7 @@ description: 信息卡片 hover 展示效果，适合学习图文卡片的动画
 ## 在线体验
 
 - [打开原始 Demo 页面](/hover-transition/card-hover/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/hover-transition/card-hover)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/card-hover)
 - [返回 CSS 过渡效果 分类](../)
 
 ## 目录结构

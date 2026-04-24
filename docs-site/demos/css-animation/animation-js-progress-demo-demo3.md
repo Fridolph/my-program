@@ -34,7 +34,7 @@ description: 通过第三种进度条样式演示相同交互需求下的不同�
 ## 在线体验
 
 - [打开原始 Demo 页面](/animation-js/progress-demo/demo3.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/animation-js/progress-demo)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/animation-js/progress-demo)
 - [返回 动画效果 分类](../)
 
 ## 目录结构

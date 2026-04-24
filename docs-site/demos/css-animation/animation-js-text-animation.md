@@ -34,7 +34,7 @@ description: 文字动画效果合集，适合参考标题入场与强调型文�
 ## 在线体验
 
 - [打开原始 Demo 页面](/animation-js/text-animation/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/animation-js/text-animation)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/animation-js/text-animation)
 - [返回 动画效果 分类](../)
 
 ## 目录结构

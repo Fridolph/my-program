@@ -414,7 +414,7 @@ export function scanDemos() {
         categoryIcon: category.icon,
         publicUrl: `/${relativePath}`,
         sourceDir: sourceDirPath,
-        sourceUrl: `https://github.com/Fridolph/my-program/tree/master/public/${sourceDirPath}`,
+        sourceUrl: `https://github.com/Fridolph/my-program/tree/main/public/${sourceDirPath}`,
         relativePath,
         fileName,
         tags: inferTags(routeDir, htmlContent, relativeDir, fileName),

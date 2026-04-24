@@ -34,7 +34,7 @@ description: 基础图片预加载示例，适合学习加载进度反馈与上�
 ## 在线体验
 
 - [打开原始 Demo 页面](/jquery/image-preloading/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/jquery/image-preloading)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/jquery/image-preloading)
 - [返回 jQuery 特效 分类](../)
 
 ## 目录结构

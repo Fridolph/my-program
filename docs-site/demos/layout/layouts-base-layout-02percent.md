@@ -34,7 +34,7 @@ description: 使用百分比实现的基础布局示例，适合理解流式宽�
 ## 在线体验
 
 - [打开原始 Demo 页面](/layouts/base-layout/02percent.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/layouts/base-layout)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/layouts/base-layout)
 - [返回 布局方案 分类](../)
 
 ## 目录结构

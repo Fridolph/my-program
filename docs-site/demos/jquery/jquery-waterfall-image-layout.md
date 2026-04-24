@@ -34,7 +34,7 @@ description: 一款jQuery可自定义图片宽度/高度瀑布流代码下载，
 ## 在线体验
 
 - [打开原始 Demo 页面](/jquery/waterfall-image-layout/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/jquery/waterfall-image-layout)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/jquery/waterfall-image-layout)
 - [返回 jQuery 特效 分类](../)
 
 ## 目录结构

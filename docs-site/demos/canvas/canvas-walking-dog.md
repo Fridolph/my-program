@@ -34,7 +34,7 @@ Walking Dog 动画演示，适合参考逐帧精灵与步行动作实现。
 ## 在线体验
 
 - [打开原始 Demo 页面](/canvas/walking-dog/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/canvas/walking-dog)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/canvas/walking-dog)
 - [返回 Canvas 动画 分类](../)
 
 ## 目录结构

@@ -34,7 +34,7 @@ Caption Hover Effects 系列第七张演示卡片。
 ## 在线体验
 
 - [打开原始 Demo 页面](/hover-transition/hover卡片2/index7.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/hover-transition/hover卡片2)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/hover卡片2)
 - [返回 CSS 过渡效果 分类](../)
 
 ## 目录结构

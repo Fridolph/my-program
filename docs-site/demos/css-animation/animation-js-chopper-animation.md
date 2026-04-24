@@ -34,7 +34,7 @@ description: 通过纯前端绘制与动画拼装角色形象，适合练习复�
 ## 在线体验
 
 - [打开原始 Demo 页面](/animation-js/chopper-animation/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/animation-js/chopper-animation)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/animation-js/chopper-animation)
 - [返回 动画效果 分类](../)
 
 ## 目录结构

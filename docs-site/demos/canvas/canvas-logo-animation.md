@@ -34,7 +34,7 @@ Canvas Logo 动画效果，适合作为品牌开场或加载动画参考。
 ## 在线体验
 
 - [打开原始 Demo 页面](/canvas/logo-animation/index.html)
-- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/master/public/canvas/logo-animation)
+- [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/canvas/logo-animation)
 - [返回 Canvas 动画 分类](../)
 
 ## 目录结构
