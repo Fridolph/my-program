@@ -1,229 +1,252 @@
-# 这里是我的demo库
+# My Program
 
-## 当前状态（2026-03-13）
+[![Deploy VitePress site to Pages](https://github.com/Fridolph/my-program/actions/workflows/static.yml/badge.svg?branch=main)](https://github.com/Fridolph/my-program/actions/workflows/static.yml)
+[![GitHub Pages](https://img.shields.io/badge/site-online-2563eb?logo=githubpages&logoColor=white)](https://fridolph.github.io/my-program/)
+[![VitePress](https://img.shields.io/badge/VitePress-1.x-646cff?logo=vite&logoColor=white)](https://vitepress.dev/)
+[![pnpm](https://img.shields.io/badge/pnpm-8.15.9-F69220?logo=pnpm&logoColor=white)](https://pnpm.io/)
+[![License: ISC](https://img.shields.io/badge/license-ISC-0f172a)](./package.json)
 
-仓库最近一轮开发已经从“历史静态 demo 集合”转向“基于 VitePress 的在线展示站”。当前重点目录如下：
+一个以 **VitePress** 为核心的前端 Demo 展示站与内容化整理仓库。
 
-- `docs-site/`：新的 VitePress 文档站与 demo 生成脚本
-- `public/`：历史 demo 静态资源
-- `docs-site/scripts/`：demo 扫描、metadata 合并、首页精选与封面生成
+这个项目最初是一个静态 Demo 集合，当前已经逐步重构为一个可在线访问的展示站：它不只保留原始示例代码，也补充了分类、标签、场景、难度、专题路线、开发笔记与发布说明，方便把历史 Demo 变成更易浏览、可复用、可持续维护的内容资产。
 
-### 默认入口与开发命令
+## 在线体验
 
-当前默认入口已经收口到 VitePress 展示站。
+- 站点首页：[https://fridolph.github.io/my-program/](https://fridolph.github.io/my-program/)
+- 项目进度：[项目进度页](https://fridolph.github.io/my-program/guide/progress/)
+- 发布说明：[发布说明页](https://fridolph.github.io/my-program/guide/deployment/)
+- 多维导航：[Explore 导航页](https://fridolph.github.io/my-program/explore/)
+- 专题发现：[Discover 页面](https://fridolph.github.io/my-program/discover/)
+- 历史入口说明：[views/index.html](https://fridolph.github.io/my-program/views/index.html)
 
-- 本地开发入口：`docs-site/`
-- 线上展示入口：GitHub Pages 根路径
-- 历史 `views/index.html` 会逐步退为旧入口说明页
-- 发布说明入口：`/guide/deployment`
+## 项目定位
 
-推荐始终在仓库根目录执行下面这些命令：
+这个仓库不只是“放了一堆 HTML 文件”的 Demo 仓库，而是在做三件事：
+
+1. **保留原始 Demo 资产**：历史静态示例仍然放在 `public/` 中，便于直接访问和二次改造。
+2. **把 Demo 产品化整理**：通过脚本扫描、元数据覆盖、页面生成和内容编排，把 Demo 变成可检索、可浏览、可串联的内容站点。
+3. **建立可持续发布链路**：通过 GitHub Actions + GitHub Pages，把 `main` 分支的更新自动构建并发布为静态网站。
+
+## 当前亮点
+
+- 基于 VitePress 的在线展示站
+- 已自动生成 **74** 个 Demo 详情页
+- 已整理 **6** 大分类：动画、过渡、Canvas、jQuery、布局、其他效果
+- 支持按 **分类 / 标签 / 场景 / 难度** 多维浏览
+- 提供 **专题路线（Spotlights）**，把零散 Demo 串成更有上下文的问题路径
+- 提供 **Quick Start / Discover / Journal** 等内容入口
+- 提供 **发布状态页** 与 **部署说明页**，便于回看构建与发布情况
+- 默认通过 GitHub Pages 对外提供静态访问
+
+## 适合谁
+
+这个项目适合以下几类使用者：
+
+- 想找前端交互、动画、布局、视觉小效果参考的人
+- 需要快速借用一个静态 Demo 做原型或演示的人
+- 想把历史 Demo 仓库升级为“可访问的文档 / 博客 / 展示站”的开发者
+- 想参考 VitePress 内容化改造、自动生成页面、静态站发布流程的人
+
+## 技术栈
+
+| 类别 | 技术 |
+| --- | --- |
+| 站点框架 | `VitePress` |
+| 前端基础 | `Vue 3`、`Vite` |
+| 包管理 | `pnpm@8.15.9` |
+| 构建方式 | 静态生成 |
+| 发布方式 | `GitHub Actions` + `GitHub Pages` |
+| 资产来源 | `public/` 历史 Demo 静态资源 |
+| 页面生成 | `docs-site/scripts/` 下的扫描与生成脚本 |
+
+## 快速开始
+
+### 环境要求
+
+- Node.js 20+
+- pnpm 8.15.9
+
+### 安装依赖
+
+```bash
+pnpm install
+```
+
+### 本地开发
 
 ```bash
 pnpm docs:dev
+```
+
+该命令会启动 VitePress 本地开发服务，适合修改文案、结构、样式后快速查看效果。
+
+### 生成站点内容
+
+```bash
 pnpm docs:generate
+```
+
+该命令会扫描 `public/` 中的 Demo 资源，并根据当前元数据和生成规则产出文档页面、聚合页和相关静态资产。
+
+### 构建产物
+
+```bash
 pnpm docs:build
-pnpm docs:preview
+```
+
+### 发布前自检
+
+```bash
 pnpm docs:check
 ```
 
-### 当前进展
+该命令会执行“生成 + 构建”的完整最小闭环，是当前最推荐的发布前校验命令。
+
+### 产物态预览
+
+```bash
+pnpm docs:preview
+```
+
+该命令更适合在发布前验证最终产物的真实访问效果。
+
+## 常用命令
+
+| 命令 | 作用 |
+| --- | --- |
+| `pnpm docs:dev` | 启动 VitePress 本地开发环境 |
+| `pnpm docs:generate` | 生成 Demo 页面、聚合页与静态内容 |
+| `pnpm docs:build` | 构建文档站点 |
+| `pnpm docs:check` | 执行生成 + 构建的完整自检 |
+| `pnpm docs:preview` | 预览最终构建产物 |
+| `pnpm dev:fe` | 启动 `packages/frontend` |
+| `pnpm dev:admin` | 启动 `packages/admin` |
+
+## 仓库结构
 
-- 已完成 VitePress 站点基础重构
-- 已完成 74 个 demo 的自动扫描和页面生成
-- 已完成 metadata 驱动的精选编排与 SVG 封面资源化
-- 已新增项目进度页 `/guide/progress` 与路线图页 `/guide/roadmap`
+```text
+my-program/
+├─ docs-site/                  # VitePress 站点源码
+│  ├─ .vitepress/              # 站点配置、主题组件、生成产物索引
+│  ├─ demos/                   # 自动生成的 Demo 文档页
+│  ├─ discover/                # 专题发现入口
+│  ├─ explore/                 # 标签 / 场景 / 难度聚合页
+│  ├─ guide/                   # 项目进度、路线图、部署说明等
+│  ├─ journal/                 # 开发笔记
+│  ├─ public/                  # 站点公开静态资源
+│  └─ scripts/                 # Demo 扫描、页面生成、内容编排脚本
+├─ public/                     # 历史静态 Demo 原始资源
+├─ scripts/                    # 根级开发与预览辅助脚本
+├─ views/                      # 历史入口说明页
+├─ packages/
+│  ├─ frontend/                # 历史或附属前端工程
+│  ├─ admin/                   # 历史或附属后台工程
+│  └─ tailwind-config/         # 共享 Tailwind 配置
+├─ logs/                       # 本地开发日志与交接记录
+├─ package.json
+└─ pnpm-workspace.yaml
+```
 
-> 历史 README 内容仍保留，作为原始 demo 列表索引。当前默认入口已经收口到 VitePress 展示站，旧 `views/index.html` 仅作为迁移说明页保留。
+## 内容生成方式
 
-搜集整理了各种类型的demo，并对之进行了分类，以便随时使用，如对您有帮助，`请star下`，再fork拿去改成你想要的效果，谢谢。
+当前站点的核心思路是：
 
-ps: 下面的每个demo都发布在线上了，可以正常访问，毕竟以展示为主
+`public/` 中的原始 Demo 资源不直接暴露为“只有目录的静态站”，而是通过脚本转换成更友好的内容结构。
 
-当前默认展示站入口：<a href="https://fridolph.github.io/my-program/" target="_blank">VitePress 展示站</a>  
-旧导航页入口：<a href="https://fridolph.github.io/my-program/views/index.html" target="_blank">views/index.html（已迁移说明）</a>
+大致流程如下：
 
-## CSS - transition 过渡相关效果 
+1. 扫描 `public/` 目录中的 HTML Demo 资源。
+2. 读取并合并分类、标签、场景、难度等元数据。
+3. 自动生成：
+   - Demo 详情页
+   - 分类聚合页
+   - 标签页 / 场景页 / 难度页
+   - Discover / Spotlights / Quick Start 相关内容页
+   - 分享图与发布快照等静态资产
+4. 交由 VitePress 构建为最终可发布站点。
 
-这个目录下一来是对所写demo进行分类，这是组件，也就是由多个小模块构成，放到该目录下以后也方便样式与结构的重用。而上面的CSS3是单纯来展示的，这里相当于筛选了一道（我可能会复用到的）
+如果你想新增一个 Demo，通常可以按下面的方式操作：
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/transform-effect/index.html" target="_blank">CSS3 Transform常见效果一览</a> 
+1. 将原始示例放入 `public/` 对应分类目录。
+2. 如有必要，在 `docs-site/scripts/` 的元数据覆盖层中补充标题、描述、标签、场景等信息。
+3. 运行 `pnpm docs:generate`。
+4. 运行 `pnpm docs:check`，确认页面生成与构建通过。
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/自制loading/index.html" target="_blank">自制loading</a> 
+## 当前内容入口
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/iconHover效果/index.html" target="_blank">iconHover效果</a> 
+你可以从不同入口进入这个仓库：
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/linear-gradient/index.html" target="_blank">linear-gradient</a> 
+- **首页**：快速了解仓库定位和当前重点内容
+- **Demo 分类**：按效果类型查看
+- **Discover**：按“问题 / 主题 / 路线”进入
+- **Explore**：按标签、场景、难度进入
+- **Journal**：查看每一轮开发演进的背景与记录
+- **Guide**：查看进度、路线图、发布与构建说明
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/text-hover/index.html" target="_blank">text-hover</a> 
+## 部署说明
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/buttons-box-shadow/index.html" target="_blank">buttons-box-shadow</a> 
+当前仓库已经接入 GitHub Pages 自动发布链路：
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/科技感炫酷menu/index.html" target="_blank">未来派3D悬停效果</a> 
+- 发布分支：`main`
+- 工作流文件：`./.github/workflows/static.yml`
+- 发布方式：GitHub Actions 构建后部署到 GitHub Pages
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/里程图片/index.html" target="_blank">里程图片</a> 
+当前发布链路会执行以下步骤：
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/竖menubar/index.html" target="_blank">竖状hover_menu</a> 
+1. 安装依赖
+2. 执行 `pnpm docs:check`
+3. 同步站点所需静态资源
+4. 上传 Pages artifact
+5. 发布为 GitHub Pages 静态站点
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/悬停菜单/index.html" target="_blank">悬停菜单</a> 
+如果你需要了解更完整的发布细节，可以直接查看：
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/悬停卡片/index.html" target="_blank">悬停卡片</a> 
+- [`docs-site/guide/deployment.md`](./docs-site/guide/deployment.md)
+- [`docs-site/guide/release-status.md`](./docs-site/guide/release-status.md)
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/自制表情/index.html" target="_blank">自制表情</a> 
+## 开发现状
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/card-hover/index.html" target="_blank">card-hover</a> 
+当前仓库已经完成从“静态 Demo 集合”到“内容化展示站”的一轮重构闭环。  
+现阶段的重点不再只是继续堆 Demo，而是持续增强以下能力：
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/card-hover-anime/index.html" target="_blank">card-hover-anime</a> 
+- 内容入口的清晰度
+- Demo 页面解释力
+- 发布链路稳定性
+- 多维导航与专题路线的承接能力
+- Quick Start 与内容消费路径的完整度
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/card-op/index.html" target="_blank">card-op</a> 
+如果你想了解最近一轮里程碑推进情况，推荐先看：
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/css3-count-showtime/index.html" target="_blank">css3-count-showtime</a> 
+- [`docs-site/guide/progress.md`](./docs-site/guide/progress.md)
+- [`docs-site/guide/roadmap.md`](./docs-site/guide/roadmap.md)
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/hover卡片2/index.html" target="_blank">hover卡片2</a> 
+## 贡献方式
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/tooltip/index.html" target="_blank">自制简易tooltip</a> 
+欢迎通过以下方式参与：
 
-<a href="https://fridolph.github.io/my-program/public/hover-transition/transform-perspective/index.html" target="_blank">transform-perspective</a> 
+- 提交 Issue，反馈页面问题、死链、内容建议或想补充的 Demo 类型
+- 提交 Pull Request，补充 Demo、修正文案、优化生成脚本或改进部署链路
+- Star / Fork 仓库，作为后续迭代的反馈支持
 
-## CSS - animation 动画相关效果
+建议在提交前至少执行一次：
 
-对，这里所有的demo大多以展示为主，运用了CSS3，没有添加额外JS就完成，所以都添加到了该分类下。至于更多的细节分类，以后再来实现了
+```bash
+pnpm docs:check
+```
 
-<a href="https://fridolph.github.io/my-program/public/animation-js/chopper-animation/index.html" target="_blank">自动画一个乔巴</a> 
+## Roadmap
 
-<a href="https://fridolph.github.io/my-program/public/animation-js/fullscreen-background-animation/index.html" target="_blank">全屏特效纯css实现</a> 
+接下来的工作会继续围绕这几个方向推进：
 
-<a href="https://fridolph.github.io/my-program/public/animation-js/icon-toggle-animation/index.html" target="_blank">ICON-toggle 为每个效果添加了对应className</a> 
+- 提升 Demo 内容说明的完整度
+- 优化专题路线与 Quick Start 的承接关系
+- 补齐线上预览、链接生成与发布细节的一致性
+- 持续治理历史 Demo 资产，降低“能看但不好用”的比例
+- 优化公开仓库的文档门面与贡献体验
 
-<a href="https://fridolph.github.io/my-program/public/animation-js/loading-love/index.html" target="_blank">css3-loading-love</a> 
+## 致谢
 
-<a href="https://fridolph.github.io/my-program/public/animation-js/login-focus-line-animation/index.html" target="_blank">自动焦点登录框</a> 
+感谢所有被保留、整理和重新组织进这个仓库的历史 Demo。  
+也感谢每一位愿意 Star、Fork、提建议或直接参与改造的人。
 
-<a href="https://fridolph.github.io/my-program/public/animation-js/menu-circular-toggle/index.html" target="_blank">纯CSS3实现圆型菜单效果</a> 
-
-<a href="https://fridolph.github.io/my-program/public/animation-js/menu-toggle-animation/index.html" target="_blank">css3-toggle-menu</a> 
-
-<a href="https://fridolph.github.io/my-program/public/animation-js/scroll-timeline/index.html" target="_blank">简单时间线DEMO</a> 
-
-<a href="https://fridolph.github.io/my-program/public/animation-js/slide-animation/index.html" target="_blank">全屏栅格背景动画</a> 
-
-<a href="https://fridolph.github.io/my-program/public/animation-js/text-animation/index.html" target="_blank">文字特效动画</a> 
-
-
-### loading-demo
-
-通过加载状态事件制作进度条
-
-- document.onreadystatechange 页面加载状态改变时的事件
-- document.readyState 返回当前文档的状态
-
-* uninitialized 还未开始载入
-* loading 载入中
-* interactive 已加载，文档与用户可以开始交互
-* complete 载入完成
-
-<a href="https://fridolph.github.io/my-program/public/animation-js/progress-demo/demo1.html" target="_blank">定时器的进度条</a> 
-
-<a href="https://fridolph.github.io/my-program/public/animation-js/progress-demo/demo1.html" target="_blank">定时器的进度条2</a> 
-
-<a href="https://fridolph.github.io/my-program/public/animation-js/progress-demo/demo1.html" target="_blank">定时器的进度条3</a> 
-
-<a href="https://fridolph.github.io/my-program/public/animation-js/progress-demo/demo1.html" target="_blank">自己来制作简单的css3进度条</a> 
-
-<a href="https://fridolph.github.io/my-program/public/animation-js/progress-demo/demo1.html" target="_blank">定位在头部的进度条</a> 
-
-
-## Layout - 布局
-
-布局可谓每一个前端的基本功，这里只列出了几个常用的布局，仅供参考，以后会逐步完善的。
-
-**flex布局篇**
-
-<a href="https://fridolph.github.io/my-program/public/layout/flex/flex.html" target="_blank">一个超棒的demo让你了解关于flex的一切</a>
-
-推荐下**阮一峰老师的博客学习**
-
-<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool" target="_blank">[语法篇学习demo]</a>
-
-<a href="http://www.ruanyifeng.com/blog/2015/07/flex-examples.html" target="_blank">[实例篇学习demo]</a>
-
-### 01_基本网格布局
-
-<a href="https://fridolph.github.io/my-program/public/layouts/flex/01_yufa.html" target="_blank">01_flex语法篇</a>
-
-### 02_flex布局实战1 骰子布局
-<a href="https://fridolph.github.io/my-program/public/layouts/flex/02_demo.html" target="_blank">02_flex-demo布局实战</a>
-
-### 03_flex布局实战2 骰子布局
-<a href="https://fridolph.github.io/my-program/public/layouts/flex/03_demo.html" target="_blank">02_flex-demo布局实战2</a>
-
-### 其他布局范例 
-
-以下是我自己的练习DEMO
-
-<a href="https://fridolph.github.io/my-program/public/layouts/base-layout/01base.html" target="_blank">01_基本网格布局</a>
-
-<a href="https://fridolph.github.io/my-program/public/layouts/base-layout/02percent.html" target="_blank">02_百分比布局</a>
-
-<a href="https://fridolph.github.io/my-program/public/layouts/base-layout/03grail.html" target="_blank">03_圣杯布局</a>
-
-<a href="https://fridolph.github.io/my-program/public/layouts/base-layout/04input.html" target="_blank">04_输入框的布局</a>
-
-<a href="https://fridolph.github.io/my-program/public/layouts/base-layout/05suspend.html" target="_blank">05_悬挂式布局</a>
-
-<a href="https://fridolph.github.io/my-program/public/layouts/base-layout/06sticky-footer.html" target="_blank">06_固定的底栏</a>
-
-<a href="https://fridolph.github.io/my-program/public/layouts/base-layout/07fluid.html" target="_blank">07fluid</a>
-
-## Canvas 实现的动画效果
-
-<a href="https://fridolph.github.io/my-program/public/canvas/change-background/index.html" target="_blank">点击烟花效果 - 自动切换背景图</a> 
-
-<a href="https://fridolph.github.io/my-program/public/canvas/colorful-gallery/index.html" target="_blank">根据图片提取相似色背景</a> 
-
-<a href="https://fridolph.github.io/my-program/public/canvas/logo-animation/index.html" target="_blank">一个简单的 LOGO动画</a> 
-
-<a href="https://fridolph.github.io/my-program/public/canvas/walking-dog/index.html" target="_blank">Walking Dog</a> 
-
-## jQuery 实现相关特效
-
-一些用jQuery完成的demo，思路和布局等代码可以在项目中直接借鉴
-
-<a href="https://fridolph.github.io/my-program/public/jquery/accordion-animation/index.html" target="_blank">jquery实现手风琴效果</a> 
-
-<a href="https://fridolph.github.io/my-program/public/jquery/accordion/index.html" target="_blank">点击导航菜单同跳转到指定位置特效</a> 
-
-<a href="https://fridolph.github.io/my-program/public/jquery/automatic-angle-mask/index.html" target="_blank">判断鼠标划入图片方向显示遮罩层特效</a>
-
-<a href="https://fridolph.github.io/my-program/public/jquery/bar-vote-anime/index.html" target="_blank">jQuery+CSS3投票结果图表</a>
-
-<a href="https://fridolph.github.io/my-program/public/jquery/card-auto-generate/index.html" target="_blank">名片自动生成</a> 
-
-<a href="https://fridolph.github.io/my-program/public/jquery/image-preloading/index.html" target="_blank">图片预加载</a> 
-
-<a href="https://fridolph.github.io/my-program/public/jquery/image-preloading/index2.html" target="_blank">图片预加载——无序之QQ表情 </a> 
-
-<a href="https://fridolph.github.io/my-program/public/jquery/image-preloading/index3.html" target="_blank">图片预加载之有序加载</a> 
-
-<a href="https://fridolph.github.io/my-program/public/jquery/label-add-jquery/index.html" target="_blank">输入框回车/点击按钮添加标签特效</a> 
-
-<a href="https://fridolph.github.io/my-program/public/jquery/mousemove-animation-eye/index.html" target="_blank">眼睛跟随鼠标转动动画特效</a> 
-
-<a href="https://fridolph.github.io/my-program/public/jquery/shopping-cart/index.html" target="_blank">模拟购物车购物数量、结算功能</a> 
-
-<a href="https://fridolph.github.io/my-program/public/jquery/waterfall-image-layout/index.html" target="_blank">瀑布流 - 可自定宽高</a> 
-
-
-## css + js 其他简单效果
-
-<a href="https://fridolph.github.io/my-program/public/other/card-change-layout/index.html" target="_blank">卡片布局 - 及卡片详情</a> 
-
-<a href="https://fridolph.github.io/my-program/public/other/pull-to-refresh/index.html" target="_blank">移动端 - 白屏优化demo</a> 
-
-<a href="https://fridolph.github.io/my-program/public/other/radio-buttons/index.html" target="_blank">components - radio-buttons</a> 
-
-<a href="https://fridolph.github.io/my-program/public/other/scroll-progress-bar/index.html" target="_blank">纯CSS3实现的滚动条</a> 
-
-# 写在最后 
-
-如果里面的demo对您有参考或帮助，请Star + Fork，谢谢！
+如果这个项目对你有帮助，欢迎点一个 Star ⭐
