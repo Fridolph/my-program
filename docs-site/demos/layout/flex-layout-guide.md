@@ -34,9 +34,10 @@ Flex 布局语法演示页，适合作为基础属性学习索引。
 
 ## 在线体验
 
-- [打开原始 Demo 页面](/layouts/flex/01_yufa.html)
 - [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/layouts/flex)
-- [返回 布局方案 分类](../)
+- [返回 布局方案 分类](/demos/layout/)
+
+> 原始 Demo 页面可通过页面顶部的“在新窗口打开”按钮直接访问。
 
 ## 目录结构
 
@@ -144,6 +145,6 @@ Flex 布局语法演示页，适合作为基础属性学习索引。
 ---
 
 <nav class="demo-nav">
-  <a href="../">← 返回分类</a>
+  <a href="/demos/layout/">← 返回分类</a>
   <a href="/">返回首页</a>
 </nav>

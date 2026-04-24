@@ -33,9 +33,10 @@ description: 功能较完整的 Tooltip 演示，适合作为提示层定位与�
 
 ## 在线体验
 
-- [打开原始 Demo 页面](/hover-transition/tooltip/index.html)
 - [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/tooltip)
-- [返回 CSS 过渡效果 分类](../)
+- [返回 CSS 过渡效果 分类](/demos/hover-transition/)
+
+> 原始 Demo 页面可通过页面顶部的“在新窗口打开”按钮直接访问。
 
 ## 目录结构
 
@@ -118,6 +119,6 @@ description: 功能较完整的 Tooltip 演示，适合作为提示层定位与�
 ---
 
 <nav class="demo-nav">
-  <a href="../">← 返回分类</a>
+  <a href="/demos/hover-transition/">← 返回分类</a>
   <a href="/">返回首页</a>
 </nav>

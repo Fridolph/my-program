@@ -34,9 +34,10 @@ description: 点击触发烟花并切换背景图，适合作为互动型视觉�
 
 ## 在线体验
 
-- [打开原始 Demo 页面](/canvas/change-background/index.html)
 - [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/canvas/change-background)
-- [返回 Canvas 动画 分类](../)
+- [返回 Canvas 动画 分类](/demos/canvas/)
+
+> 原始 Demo 页面可通过页面顶部的“在新窗口打开”按钮直接访问。
 
 ## 目录结构
 
@@ -137,6 +138,6 @@ description: 点击触发烟花并切换背景图，适合作为互动型视觉�
 ---
 
 <nav class="demo-nav">
-  <a href="../">← 返回分类</a>
+  <a href="/demos/canvas/">← 返回分类</a>
   <a href="/">返回首页</a>
 </nav>

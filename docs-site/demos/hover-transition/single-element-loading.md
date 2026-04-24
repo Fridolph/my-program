@@ -33,9 +33,10 @@ description: 单元素实现的 Loading 动画，适合练习伪元素与关键�
 
 ## 在线体验
 
-- [打开原始 Demo 页面](/hover-transition/自制loading/index.html)
 - [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/自制loading)
-- [返回 CSS 过渡效果 分类](../)
+- [返回 CSS 过渡效果 分类](/demos/hover-transition/)
+
+> 原始 Demo 页面可通过页面顶部的“在新窗口打开”按钮直接访问。
 
 ## 目录结构
 
@@ -136,6 +137,6 @@ description: 单元素实现的 Loading 动画，适合练习伪元素与关键�
 ---
 
 <nav class="demo-nav">
-  <a href="../">← 返回分类</a>
+  <a href="/demos/hover-transition/">← 返回分类</a>
   <a href="/">返回首页</a>
 </nav>

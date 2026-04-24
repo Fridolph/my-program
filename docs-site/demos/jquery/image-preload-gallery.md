@@ -33,9 +33,10 @@ description: 基础图片预加载示例，适合学习加载进度反馈与上�
 
 ## 在线体验
 
-- [打开原始 Demo 页面](/jquery/image-preloading/index.html)
 - [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/jquery/image-preloading)
-- [返回 jQuery 特效 分类](../)
+- [返回 jQuery 特效 分类](/demos/jquery/)
+
+> 原始 Demo 页面可通过页面顶部的“在新窗口打开”按钮直接访问。
 
 ## 目录结构
 
@@ -145,6 +146,6 @@ description: 基础图片预加载示例，适合学习加载进度反馈与上�
 ---
 
 <nav class="demo-nav">
-  <a href="../">← 返回分类</a>
+  <a href="/demos/jquery/">← 返回分类</a>
   <a href="/">返回首页</a>
 </nav>

@@ -33,9 +33,10 @@ CSS3 3D 透视视频展示效果，适合作为空间感卡片与封面参考。
 
 ## 在线体验
 
-- [打开原始 Demo 页面](/hover-transition/transform-perspective/index.html)
 - [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/hover-transition/transform-perspective)
-- [返回 CSS 过渡效果 分类](../)
+- [返回 CSS 过渡效果 分类](/demos/hover-transition/)
+
+> 原始 Demo 页面可通过页面顶部的“在新窗口打开”按钮直接访问。
 
 ## 目录结构
 
@@ -116,6 +117,6 @@ CSS3 3D 透视视频展示效果，适合作为空间感卡片与封面参考。
 ---
 
 <nav class="demo-nav">
-  <a href="../">← 返回分类</a>
+  <a href="/demos/hover-transition/">← 返回分类</a>
   <a href="/">返回首页</a>
 </nav>

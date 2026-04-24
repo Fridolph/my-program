@@ -1689,6 +1689,7 @@ function generateDemoPage(demo, demos, spotlightEntries = []) {
   const relatedDemos = getRelatedDemos(demo, demos, 3)
   const relatedJournals = getRelatedJournalEntriesByDemo(demo)
   const relatedSpotlights = getSpotlightEntriesForDemo(demo, spotlightEntries)
+  const categoryPageUrl = `/demos/${demo.categoryId}/`
   const tagLinks = (demo.tags ?? []).map(tag => ({
     label: tag,
     href: `/explore/tags/${slugifyTerm(tag)}`
@@ -1772,9 +1773,10 @@ ${renderBulletSection(whyRead, '当前还没有补充“为什么值得看”的
 
 ## 在线体验
 
-- [打开原始 Demo 页面](${demo.publicUrl})
 - [查看 GitHub 源码目录](${demo.sourceUrl})
-- [返回 ${demo.categoryName} 分类](../)
+- [返回 ${demo.categoryName} 分类](${categoryPageUrl})
+
+> 原始 Demo 页面可通过页面顶部的“在新窗口打开”按钮直接访问。
 
 ## 目录结构
 
@@ -1829,7 +1831,7 @@ ${renderJournalCards(relatedJournals)}
 ---
 
 <nav class="demo-nav">
-  <a href="../">← 返回分类</a>
+  <a href="${categoryPageUrl}">← 返回分类</a>
   <a href="/">返回首页</a>
 </nav>
 `

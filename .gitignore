@@ -2,9 +2,13 @@ node_modules
 node_modules/**/node_modules
 
 # VitePress build outputs and cache
-.vitepress/
+/\.vitepress/
 public-new/
 dist/
+docs-site/.vitepress/*
+!docs-site/.vitepress/config.ts
+!docs-site/.vitepress/theme/
+!docs-site/.vitepress/theme/**
 docs-site/.vitepress/dist
 docs-site/.vitepress/cache/
 

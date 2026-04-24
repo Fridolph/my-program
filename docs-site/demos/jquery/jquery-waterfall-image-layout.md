@@ -33,9 +33,10 @@ description: 一款jQuery可自定义图片宽度/高度瀑布流代码下载，
 
 ## 在线体验
 
-- [打开原始 Demo 页面](/jquery/waterfall-image-layout/index.html)
 - [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/jquery/waterfall-image-layout)
-- [返回 jQuery 特效 分类](../)
+- [返回 jQuery 特效 分类](/demos/jquery/)
+
+> 原始 Demo 页面可通过页面顶部的“在新窗口打开”按钮直接访问。
 
 ## 目录结构
 
@@ -124,6 +125,6 @@ description: 一款jQuery可自定义图片宽度/高度瀑布流代码下载，
 ---
 
 <nav class="demo-nav">
-  <a href="../">← 返回分类</a>
+  <a href="/demos/jquery/">← 返回分类</a>
   <a href="/">返回首页</a>
 </nav>

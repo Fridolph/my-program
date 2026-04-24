@@ -33,9 +33,10 @@ description: 一款jQuery判断鼠标划入图片方向显示遮罩层特效代�
 
 ## 在线体验
 
-- [打开原始 Demo 页面](/jquery/automatic-angle-mask/index.html)
 - [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/jquery/automatic-angle-mask)
-- [返回 jQuery 特效 分类](../)
+- [返回 jQuery 特效 分类](/demos/jquery/)
+
+> 原始 Demo 页面可通过页面顶部的“在新窗口打开”按钮直接访问。
 
 ## 目录结构
 
@@ -123,6 +124,6 @@ description: 一款jQuery判断鼠标划入图片方向显示遮罩层特效代�
 ---
 
 <nav class="demo-nav">
-  <a href="../">← 返回分类</a>
+  <a href="/demos/jquery/">← 返回分类</a>
   <a href="/">返回首页</a>
 </nav>

@@ -33,9 +33,10 @@ description: 将进度条固定在页面顶部，适合模拟阅读进度或加�
 
 ## 在线体验
 
-- [打开原始 Demo 页面](/animation-js/progress-demo/demo5.html)
 - [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/animation-js/progress-demo)
-- [返回 动画效果 分类](../)
+- [返回 动画效果 分类](/demos/css-animation/)
+
+> 原始 Demo 页面可通过页面顶部的“在新窗口打开”按钮直接访问。
 
 ## 目录结构
 
@@ -128,6 +129,6 @@ description: 将进度条固定在页面顶部，适合模拟阅读进度或加�
 ---
 
 <nav class="demo-nav">
-  <a href="../">← 返回分类</a>
+  <a href="/demos/css-animation/">← 返回分类</a>
   <a href="/">返回首页</a>
 </nav>

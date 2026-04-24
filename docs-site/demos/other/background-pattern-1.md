@@ -33,9 +33,10 @@ description: 背景纹理实验示例，可作为页面氛围层或装饰层参�
 
 ## 在线体验
 
-- [打开原始 Demo 页面](/css/background/1.html)
 - [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/css/background)
-- [返回 其他效果 分类](../)
+- [返回 其他效果 分类](/demos/other/)
+
+> 原始 Demo 页面可通过页面顶部的“在新窗口打开”按钮直接访问。
 
 ## 目录结构
 
@@ -107,6 +108,6 @@ description: 背景纹理实验示例，可作为页面氛围层或装饰层参�
 ---
 
 <nav class="demo-nav">
-  <a href="../">← 返回分类</a>
+  <a href="/demos/other/">← 返回分类</a>
   <a href="/">返回首页</a>
 </nav>

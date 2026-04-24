@@ -33,9 +33,10 @@ description: 菜单按钮切换动画示例，适合学习展开收起的动效�
 
 ## 在线体验
 
-- [打开原始 Demo 页面](/animation-js/menu-toggle-animation/index.html)
 - [查看 GitHub 源码目录](https://github.com/Fridolph/my-program/tree/main/public/animation-js/menu-toggle-animation)
-- [返回 动画效果 分类](../)
+- [返回 动画效果 分类](/demos/css-animation/)
+
+> 原始 Demo 页面可通过页面顶部的“在新窗口打开”按钮直接访问。
 
 ## 目录结构
 
@@ -121,6 +122,6 @@ description: 菜单按钮切换动画示例，适合学习展开收起的动效�
 ---
 
 <nav class="demo-nav">
-  <a href="../">← 返回分类</a>
+  <a href="/demos/css-animation/">← 返回分类</a>
   <a href="/">返回首页</a>
 </nav>
