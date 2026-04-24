@@ -1,0 +1,26 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="entryGradient" x1="108" y1="64" x2="1090" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f172a" />
+      <stop offset="0.55" stop-color="#475569" />
+      <stop offset="1" stop-color="#94a3b8" />
+    </linearGradient>
+    <radialGradient id="entryOrbA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1020 140) rotate(128.2) scale(220 260)">
+      <stop stop-color="rgba(255,255,255,0.3)" />
+      <stop offset="1" stop-color="rgba(255,255,255,0)" />
+    </radialGradient>
+    <radialGradient id="entryOrbB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 610) rotate(12) scale(280 180)">
+      <stop stop-color="rgba(255,255,255,0.18)" />
+      <stop offset="1" stop-color="rgba(255,255,255,0)" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="720" rx="40" fill="url(#entryGradient)" />
+  <rect x="36" y="36" width="1128" height="648" rx="28" fill="rgba(15,23,42,0.18)" stroke="rgba(255,255,255,0.14)" />
+  <circle cx="1020" cy="140" r="220" fill="url(#entryOrbA)" />
+  <circle cx="180" cy="610" r="260" fill="url(#entryOrbB)" />
+  <rect x="84" y="86" width="240" height="46" rx="23" fill="rgba(255,255,255,0.16)" />
+  <text x="204" y="116" text-anchor="middle" font-size="18" font-weight="700" fill="#F8FAFC" font-family="Inter, Arial, sans-serif">Scene</text>
+  <text x="84" y="254" font-size="72" font-weight="800" fill="#F8FAFC" font-family="Inter, Arial, sans-serif">图片浏览</text>
+  <text x="84" y="336" font-size="30" font-weight="700" fill="rgba(248,250,252,0.94)" font-family="Inter, Arial, sans-serif">场景入口 · 浏览线索 · 案例聚合</text>
+  <text x="84" y="624" font-size="18" fill="rgba(248,250,252,0.72)" font-family="Inter, Arial, sans-serif">scene entry / content discovery</text>
+</svg>

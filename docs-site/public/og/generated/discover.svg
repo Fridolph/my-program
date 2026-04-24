@@ -1,0 +1,29 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="72" y1="52" x2="1110" y2="582" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#312E81"/>
+      <stop offset="0.5" stop-color="#1D4ED8"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <radialGradient id="orbA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1020 110) rotate(128.2) scale(190 250)">
+      <stop stop-color="rgba(255,255,255,0.36)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <radialGradient id="orbB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(190 540) rotate(32.6) scale(220 180)">
+      <stop stop-color="rgba(255,255,255,0.18)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" rx="36" fill="#07111F"/>
+  <rect x="30" y="30" width="1140" height="570" rx="28" fill="url(#bg)"/>
+  <circle cx="1020" cy="110" r="190" fill="url(#orbA)"/>
+  <circle cx="190" cy="540" r="220" fill="url(#orbB)"/>
+  <path d="M120 454C222 342 302 286 398 286C490 286 566 356 638 356C726 356 814 260 938 180" stroke="rgba(255,255,255,0.14)" stroke-width="20" stroke-linecap="round"/>
+  <rect x="108" y="108" width="288" height="44" rx="22" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.18)"/>
+  <text x="140" y="136" fill="#BFDBFE" font-size="22" font-family="Inter, Arial, sans-serif" letter-spacing="1.5">专题发现</text>
+  <text x="108" y="244" fill="#F8FAFC" font-size="64" font-family="Inter, Arial, sans-serif" font-weight="800">专题发现</text>
+  <text x="108" y="356" fill="#CBD5E1" font-size="28" font-family="Inter, Arial, sans-serif" font-weight="500">从精选主题、内容入口和分类入口继续发现高价值 demo。</text>
+  <rect x="108" y="474" width="342" height="58" rx="18" fill="#2563EB"/>
+  <text x="144" y="511" fill="#EFF6FF" font-size="28" font-family="Inter, Arial, sans-serif" font-weight="700">内容入口</text>
+  <text x="108" y="574" fill="#94A3B8" font-size="24" font-family="Inter, Arial, sans-serif">爱心 Loading 动画 · 未来派3D悬停效果 · 烟花触发背景切换</text>
+</svg>

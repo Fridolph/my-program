@@ -1,10 +1,47 @@
 # 这里是我的demo库
 
+## 当前状态（2026-03-13）
+
+仓库最近一轮开发已经从“历史静态 demo 集合”转向“基于 VitePress 的在线展示站”。当前重点目录如下：
+
+- `docs-site/`：新的 VitePress 文档站与 demo 生成脚本
+- `public/`：历史 demo 静态资源
+- `docs-site/scripts/`：demo 扫描、metadata 合并、首页精选与封面生成
+
+### 默认入口与开发命令
+
+当前默认入口已经收口到 VitePress 展示站。
+
+- 本地开发入口：`docs-site/`
+- 线上展示入口：GitHub Pages 根路径
+- 历史 `views/index.html` 会逐步退为旧入口说明页
+- 发布说明入口：`/guide/deployment`
+
+推荐始终在仓库根目录执行下面这些命令：
+
+```bash
+pnpm docs:dev
+pnpm docs:generate
+pnpm docs:build
+pnpm docs:preview
+pnpm docs:check
+```
+
+### 当前进展
+
+- 已完成 VitePress 站点基础重构
+- 已完成 74 个 demo 的自动扫描和页面生成
+- 已完成 metadata 驱动的精选编排与 SVG 封面资源化
+- 已新增项目进度页 `/guide/progress` 与路线图页 `/guide/roadmap`
+
+> 历史 README 内容仍保留，作为原始 demo 列表索引。当前默认入口已经收口到 VitePress 展示站，旧 `views/index.html` 仅作为迁移说明页保留。
+
 搜集整理了各种类型的demo，并对之进行了分类，以便随时使用，如对您有帮助，`请star下`，再fork拿去改成你想要的效果，谢谢。
 
 ps: 下面的每个demo都发布在线上了，可以正常访问，毕竟以展示为主
 
-做了个简单首页可作为导航 - 也算个demo <a href="https://fridolph.github.io/my-program/views/index.html" target="_blank">我的主页</a> 
+当前默认展示站入口：<a href="https://fridolph.github.io/my-program/" target="_blank">VitePress 展示站</a>  
+旧导航页入口：<a href="https://fridolph.github.io/my-program/views/index.html" target="_blank">views/index.html（已迁移说明）</a>
 
 ## CSS - transition 过渡相关效果 
 
@@ -190,4 +227,3 @@ ps: 下面的每个demo都发布在线上了，可以正常访问，毕竟以展
 # 写在最后 
 
 如果里面的demo对您有参考或帮助，请Star + Fork，谢谢！
-

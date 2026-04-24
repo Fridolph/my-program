@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fridolph.github.io/my-program/sitemap.xml

@@ -1,2 +1,33 @@
 node_modules
 node_modules/**/node_modules
+
+# VitePress build outputs and cache
+.vitepress/
+public-new/
+dist/
+docs-site/.vitepress/dist
+docs-site/.vitepress/cache/
+
+# Development environment
+.claude/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

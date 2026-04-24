@@ -1,0 +1,187 @@
+---
+layout: doc
+title: 快速开始 · 角色 · 视觉探索
+description: 更适合先判断氛围、品牌感和第一眼视觉层次，再决定如何收进真实页面结构。
+---
+
+# 快速开始 · 角色 · 视觉探索
+
+更适合先判断氛围、品牌感和第一眼视觉层次，再决定如何收进真实页面结构。
+
+## 当前聚合情况
+
+- 维度：角色
+- 起步线：1 条
+- 相关路线：1 条
+- 相关场景：2 个
+- 推荐案例：6 个
+
+## 推荐先走的起步线
+
+<div class="topic-card-grid">
+    <a class="topic-card" href="/discover/quick-start/hero-first-screen">
+      <strong>我想先做首页首屏</strong>
+      <span>中等投入 · 品牌首页 / Landing Page</span>
+      <small>适合先判断首屏氛围、导航组织和第一眼品牌感该如何配合。</small>
+    </a>
+  </div>
+
+## 当前角色更常见的下一步推进类型
+
+<div class="topic-card-grid">
+    <a class="topic-card" href="/discover/quick-start/follow-up/feedback-flow">
+      <strong>补反馈节奏</strong>
+      <span>1 次被提到</span>
+      <small>如果首页已经开始承接长内容或异步资源，再继续补阅读与加载反馈会更完整。</small>
+    </a>
+    <a class="topic-card" href="/discover/quick-start/follow-up/content-entry">
+      <strong>补内容入口</strong>
+      <span>1 次被提到</span>
+      <small>首屏方向跑通之后，下一步通常要继续把卡片入口、内容预览或列表结构补稳。</small>
+    </a>
+  </div>
+
+
+## 当前角色更适合暂缓的推进类型
+
+<div class="topic-card-grid">
+    <a class="topic-card" href="/discover/quick-start/follow-up/micro-motion">
+      <strong>先不上 补局部动效</strong>
+      <span>1 次被提到</span>
+      <small>在首屏入口和整体氛围都还没站稳前，先不要急着补局部动效，否则很容易把注意力打散。</small>
+    </a>
+  </div>
+
+
+## 当前更常见的推进取舍
+
+<div class="topic-card-grid">
+    <a class="topic-card" href="/discover/quick-start/hero-first-screen">
+      <strong>补反馈节奏 &gt; 补局部动效</strong>
+      <span>我想先做首页首屏</span>
+      <small>如果首页已经开始承接真实内容或异步资源，先补反馈节奏会比先补局部动效更能降低用户的不确定感。</small>
+    </a>
+    <a class="topic-card" href="/discover/quick-start/hero-first-screen">
+      <strong>补内容入口 &gt; 补局部动效</strong>
+      <span>我想先做首页首屏</span>
+      <small>当首屏入口和主视觉关系还没站稳前，先补内容入口会比先补局部动效更容易守住第一眼判断。</small>
+    </a>
+  </div>
+
+
+## 当前最容易做过头的地方
+
+<div class="topic-card-grid">
+    <a class="topic-card" href="/discover/quick-start/follow-up/micro-motion">
+      <strong>小心做过头：补局部动效</strong>
+      <span>1 次被提到</span>
+      <small>如果在入口结构还没稳之前就叠太多局部动效，很容易把页面做成“有气氛但不好进”。</small>
+    </a>
+    <a class="topic-card" href="/discover/quick-start/follow-up/hero-atmosphere">
+      <strong>小心做过头：补首屏氛围</strong>
+      <span>1 次被提到</span>
+      <small>这一条线最容易做过头的，是在首屏里堆太多视觉元素，结果反而把第一条入口和品牌判断一起压掉。</small>
+    </a>
+  </div>
+
+
+## 常见推进顺序
+
+<div class="topic-card-grid">
+    <a class="topic-card" href="/discover/quick-start/hero-first-screen">
+      <strong>我想先做首页首屏 -&gt; 我想先做卡片列表与内容预览</strong>
+      <span>补内容入口 · 前端实现 · 验证期</span>
+      <small>首屏方向跑通之后，下一步通常要继续把卡片入口、内容预览或列表结构补稳。</small>
+    </a>
+    <a class="topic-card" href="/discover/quick-start/hero-first-screen">
+      <strong>我想先做首页首屏 -&gt; 我想先做阅读与加载反馈</strong>
+      <span>补反馈节奏 · 前端实现 · 打磨期</span>
+      <small>如果首页已经开始承接长内容或异步资源，再继续补阅读与加载反馈会更完整。</small>
+    </a>
+  </div>
+
+
+
+
+
+
+## 推荐先走的路线
+
+<div class="topic-card-grid">
+    <a class="topic-card" href="/discover/spotlights/hero-brand-experience">
+      <strong>首屏与品牌感建立</strong>
+      <span>4 个场景 · 11 个 demo</span>
+      <small>适合在首页首屏、作品集首页和品牌型着陆页里建立第一眼的氛围、导航感和视觉记忆。</small>
+    </a>
+  </div>
+
+## 推荐先看的场景
+
+<div class="topic-card-grid">
+    <a class="topic-card" href="/explore/scenes/u5bfc-u822a-u4ea4-u4e92">
+      <strong>导航交互</strong>
+      <span>4 个 demo</span>
+      <small>适合在菜单、入口切换和导航强化场景里寻找更有辨识度的交互组织方式。</small>
+    </a>
+    <a class="topic-card" href="/explore/scenes/u9996-u5c4f-u6c1b-u56f4">
+      <strong>首屏氛围</strong>
+      <span>6 个 demo</span>
+      <small>适合在首页首屏、活动页头图和情绪化展示区寻找更有氛围感的视觉表达。</small>
+    </a>
+  </div>
+
+## 推荐先看的案例
+
+<div class="mini-card-grid">
+    <a class="mini-card" href="/demos/css-animation/animation-js-loading-love">
+      <strong>爱心 Loading 动画</strong>
+      <span>爱心主题的 Loading 动画，适合作为节日或趣味场景的等待反馈。</span>
+    </a>
+    <a class="mini-card" href="/demos/hover-transition/futuristic-3d-menu">
+      <strong>未来派3D悬停效果</strong>
+      <span>科技感 3D 菜单效果，适合参考带空间感的导航动效。</span>
+    </a>
+    <a class="mini-card" href="/demos/canvas/fireworks-background-switch">
+      <strong>烟花触发背景切换</strong>
+      <span>点击触发烟花并切换背景图，适合作为互动型视觉演示。</span>
+    </a>
+    <a class="mini-card" href="/demos/css-animation/animation-js-menu-circular-toggle">
+      <strong>圆形展开菜单</strong>
+      <span>使用纯 CSS3 实现的圆形菜单展开效果，适合学习 transform 与过渡组合。</span>
+    </a>
+    <a class="mini-card" href="/demos/canvas/canvas-colorful-gallery">
+      <strong>图片取色氛围画廊</strong>
+      <span>根据图片主色生成背景氛围，适合学习图片取色与视觉呼应。</span>
+    </a>
+    <a class="mini-card" href="/demos/hover-transition/split-panel-gallery">
+      <strong>分栏式人物画廊</strong>
+      <span>分栏式人物画廊效果，适合参考并列菜单与大图预览的组合布局。</span>
+    </a>
+  </div>
+
+## 相关开发笔记
+
+<div class="journal-card-grid">
+    <a class="journal-card" href="/journal/dao-m10-content-depth">
+      <span class="journal-card-date">2026-03-15</span>
+      <strong>M10 开发笔记：让 demo 页开始真正承担内容解释职责</strong>
+      <p>为重点 demo 补结构化内容骨架，并补强公共场景与 scene narrative，让详情页和场景页都更像内容入口。</p>
+    </a>
+    <a class="journal-card" href="/journal/dao-m8-page-share-assets">
+      <span class="journal-card-date">2026-03-15</span>
+      <strong>M8 开发笔记：让关键页面开始拥有自己的传播语义</strong>
+      <p>让页面级分享图进入生成链路，使首页、Demo 页、指南页和开发笔记页拥有各自的传播卡片。</p>
+    </a>
+    <a class="journal-card" href="/journal/featured-curation">
+      <span class="journal-card-date">2026-03-13</span>
+      <strong>阶段笔记：首页精选与封面策展</strong>
+      <p>记录首页如何从列表导航升级成 metadata 驱动的精选策展入口。</p>
+    </a>
+  </div>
+
+## 延伸入口
+
+- [返回上一层总览](/discover/quick-start/roles/)
+- [返回快速开始总览](/discover/quick-start/)
+- [返回专题发现](/discover/)
+- [返回多维导航](/explore/)

@@ -1,0 +1,18 @@
+{
+  "name": "My Program Demo Collection",
+  "short_name": "MyProgram",
+  "description": "收集整理各种前端 demo，包括动画、Canvas、jQuery 与布局方案。",
+  "start_url": "/my-program/",
+  "scope": "/my-program/",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/my-program/og/site-default.svg",
+      "sizes": "1200x630",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

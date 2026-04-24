@@ -1,256 +1,107 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="zh-CN">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fridolph的个人网站 - Fridolph's Personal Website</title>
-    <meta name=description content="付寅生 - 一个阳光开朗积极,爱棒球的热血运动技术型青年,大成都的前端工程师">
-    <meta name=keywords content=付寅生,简历,个人简历,前端简历,前端工程师简历,fridolph,霪霖笙箫,高级前端,>
-    <meta name=author content=付寅生>
-    <meta name=copyright content=付寅生>
-    <style type="text/css">
-      * {
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>旧入口已迁移到 VitePress 展示站</title>
+    <meta name="description" content="my-program 旧首页入口说明页，默认入口已迁移到新的 VitePress 展示站。" />
+    <meta name="robots" content="noindex,follow" />
+    <link rel="canonical" href="https://fridolph.github.io/my-program/" />
+    <meta http-equiv="refresh" content="1;url=../" />
+    <style>
+      * { box-sizing: border-box; }
+      body {
         margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: radial-gradient(circle at top, #e0f2fe 0%, #f8fafc 45%, #e2e8f0 100%);
+        color: #0f172a;
       }
-
-      ul,
-      li,
-      ol {
-        list-style: none;
+      .panel {
+        width: min(680px, 100%);
+        padding: 32px;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.82);
+        border: 1px solid rgba(148, 163, 184, 0.3);
+        box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+        backdrop-filter: blur(8px);
       }
-
-      a {
-        text-decoration: none;
+      .eyebrow {
+        display: inline-flex;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #dbeafe;
+        color: #1d4ed8;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
       }
-
-      html,
-      body {
-        width: 100%;
-        height: 100%;
+      h1 {
+        margin: 16px 0 12px;
+        font-size: clamp(28px, 5vw, 42px);
+        line-height: 1.1;
       }
-
-      body {
-        background: url('./img/home_index_img.jpg') 100% 100% no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
+      p {
+        margin: 0 0 14px;
+        line-height: 1.7;
+        color: #334155;
       }
-
-      @media screen and (max-width: 480px) {
-        body {
-          background-position: 40% 50%;
-          background-size: cover;
-          background-attachment: fixed;
-        }
-      }
-
-      .bg-layer {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.3);
-      }
-
-      .box-container {
-        background-color: rgba(0, 0, 0, 0.4);
-        border-radius: 8px;
-        color: #fefefe;
-        overflow: hidden;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        height: 300px;
-        width: 90vw;
-        max-width: 600px;
-        transform: translate(-50%, -50%);
-        padding: 20px;
+      .actions {
         display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+      }
+      .actions a {
+        display: inline-flex;
+        align-items: center;
         justify-content: center;
+        min-width: 168px;
+        padding: 12px 18px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 600;
       }
-
-      .box-container .container-inner {
-        width: 100%;
-      }
-
-      .box-container .inner-header {
-        text-align: center;
-        text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-      }
-
-      .box-container .inner-header:hover {
-        text-decoration: underline;
-      }
-
-      .box-container h1 {
-        font-size: 24px;
-      }
-
-      .box-container .inner-content {
-        margin: 20px 0 10px 0;
-        padding: 10px;
-      }
-
-      .box-container .inner-content .list {
-        position: relative;
-      }
-
-      .box-container .inner-content .list::before,
-      .box-container .inner-content .list::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        border-radius: 4px;
-        background: rgba(255, 255, 255, 0.6);
-      }
-
-      .box-container .inner-content .list::before {
-        left: 0;
-        top: -20px;
-      }
-
-      .box-container .inner-content .list:after {
-        left: 0;
-        bottom: -20px;
-      }
-
-      .box-container .inner-content .list-item {
-        text-indent: 1em;
-        border-radius: 4px;
-        margin: 10px 0;
-        background: rgba(0, 0, 0, 0.6);
-        transition: all ease-in-out 0.4s;
-      }
-
-      .box-container .inner-content .list-item a {
-        color: #eee;
-        display: block;
-        line-height: 2;
-        transition: all ease-in-out 0.4s;
-      }
-
-      .box-container .inner-content .item-1:hover {
-        background: linear-gradient(90deg, #b9deed, rgba(255, 255, 255, 0.7));
-      }
-
-      .box-container .inner-content .item-1:hover a {
-        color: #333;
-      }
-
-      .box-container .inner-content .item-2 {
-        position: relative;
-        z-index: 2;
-      }
-
-      .box-container .inner-content .item-2::before {
-        content: '';
-        background: linear-gradient(90deg, #71bbe9, #f0f0f0);
-        position: absolute;
-        z-index: -1;
-        width: 0;
-        height: 100%;
-        left: 0;
-        border-radius: 4px;
-        transition: all 0.7s ease;
-      }
-
-      .box-container .inner-content .item-2:hover a {
-        color: #333;
-      }
-
-      .box-container .inner-content .item-2:hover::before {
-        width: 100%;
-      }
-
-      .box-container .inner-content .item-3 {
-        position: relative;
-        perspective: 500px;
-        width: 100%;
-        height: 32px;
-      }
-
-      .box-container .inner-content .item-3 .box {
-        height: 100%;
-        position: relative;
-        transform-style: preserve-3d;
-      }
-
-      .box-container .inner-content .item-3 .box .over-layer {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        background: linear-gradient(90deg, #c4b9ed, rgba(255, 255, 255, 0.7));
-        transform: translateY(100%);
+      .primary {
+        background: #0f172a;
         color: #fff;
-        transition: all 0.6s ease;
-        border-radius: 4px;
       }
-
-      .box-container .inner-content .item-3 .box:hover .layer {
-        transform: translateY(-100%) rotateX(90deg);
-        transform-origin: bottom center;
-        opacity: 0;
+      .secondary {
+        border: 1px solid #cbd5e1;
+        color: #0f172a;
+        background: #fff;
       }
-
-      .box-container .inner-content .item-3 .box:hover .over-layer {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .box-container .inner-footer {
-        text-align: right;
+      .hint {
+        margin-top: 18px;
         font-size: 14px;
+        color: #64748b;
       }
-
     </style>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        window.setTimeout(() => {
+          window.location.replace('../')
+        }, 400)
+      })
+    </script>
   </head>
-
   <body>
-    <a style="position: absolute; top: 0; right: 0; border: 0;" href="https://github.com/Fridolph/my-program"><img src="https://fridolph.github.io/my-program/views/img/forkme.png" alt="Fork me on GitHub" data-canonical-src="https://fridolph.github.io/my-program/views/img/forkme.png"></a>
-    <div class="bg-layer"></div>
-    <div id="container" class="box-container">
-      <div class="container-inner">
-        <div class="inner-header">
-          <div class="title">
-            <h1>Fridolph的个人网站</h1>
-            <sub>Fridolph's Personal Website</sub>
-          </div>
-        </div>
-        <div class="inner-content">
-          <ul class="list">
-            <li class="list-item item-1">
-              <a target="_blank" href="https://github.com/fridolph">» github</a>
-            </li>
-            <li class="list-item item-2">
-              <a target="_blank" href="https://blog.fridolph.top">» Blog</a>
-            </li>
-            <li class="list-item item-3">
-              <div class="box">
-                <a target="_blank" href="https://github.com/Fridolph/my-program"
-                  class="layer">» Program</a>
-                <div class="over-layer">
-                  <a target="_blank" href="https://github.com/Fridolph/my-program">»
-                    Program</a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="inner-footer">
-          Contact | fridolph.top
-        </div>
+    <main class="panel">
+      <span class="eyebrow">Legacy Entry</span>
+      <h1>旧首页入口已迁移到 VitePress 展示站</h1>
+      <p><code>views/index.html</code> 不再作为仓库默认入口。</p>
+      <p>当前默认入口已经迁移到新的文档站，你将自动跳转到新的首页。如果你是从旧链接进入，也可以手动点击下面的入口继续浏览。</p>
+      <div class="actions">
+        <a class="primary" href="../">进入当前展示站</a>
+        <a class="secondary" href="../guide/deployment.html">查看发布说明</a>
+        <a class="secondary" href="../public/">查看原始 demo 资源目录</a>
       </div>
-    </div>
+      <p class="hint">如果没有自动跳转，请手动点击“进入当前展示站”。如果你是维护者，也可以从“查看发布说明”回看当前发布链路。</p>
+    </main>
   </body>
-
 </html>

@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev:fe": "pnpm -C ./packages/frontend dev",
-    "dev:admin": "pnpm -C ./packages/admin dev"
+    "dev:admin": "pnpm -C ./packages/admin dev",
+    "docs:dev": "node scripts/docs-dev.mjs",
+    "docs:generate": "pnpm -C ./docs-site generate",
+    "docs:build": "pnpm -C ./docs-site build",
+    "docs:preview": "node scripts/docs-preview.mjs",
+    "docs:check": "pnpm docs:generate && pnpm docs:build"
   },
   "repository": {
     "type": "git",

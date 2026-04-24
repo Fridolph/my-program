@@ -1,0 +1,43 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="coverGradient" x1="82" y1="76" x2="1120" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f172a" />
+      <stop offset="0.52" stop-color="#334155" />
+      <stop offset="1" stop-color="#38bdf8" />
+    </linearGradient>
+    <radialGradient id="orbA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1020 110) rotate(128.2) scale(190 250)">
+      <stop stop-color="rgba(255,255,255,0.38)" />
+      <stop offset="1" stop-color="rgba(255,255,255,0)" />
+    </radialGradient>
+    <radialGradient id="orbB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(190 540) rotate(32.6) scale(220 180)">
+      <stop stop-color="rgba(255,255,255,0.18)" />
+      <stop offset="1" stop-color="rgba(255,255,255,0)" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" rx="36" fill="url(#coverGradient)" />
+  <rect x="32" y="32" width="1136" height="566" rx="28" fill="rgba(15,23,42,0.18)" stroke="rgba(255,255,255,0.16)" />
+  <circle cx="1020" cy="110" r="190" fill="url(#orbA)" />
+  <circle cx="190" cy="540" r="220" fill="url(#orbB)" />
+  <rect x="72" y="76" width="190" height="42" rx="21" fill="rgba(255,255,255,0.16)" />
+  <text x="167" y="103" text-anchor="middle" font-size="18" font-weight="700" fill="#F8FAFC" font-family="Inter, Arial, sans-serif">Layout Guide</text>
+  <text x="72" y="220" font-size="62" font-weight="800" fill="#F8FAFC" font-family="Inter, Arial, sans-serif">Flex Basics</text>
+  <text x="72" y="302" font-size="30" font-weight="700" fill="rgba(248,250,252,0.96)" font-family="Inter, Arial, sans-serif">Flex 语法示例</text>
+  <foreignObject x="72" y="334" width="860" height="92">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Inter,Arial,sans-serif;font-size:24px;line-height:1.45;color:rgba(248,250,252,0.88);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">
+      适合作为布局类 demo 的导航入口，帮助快速进入基础排版主题。
+    </div>
+  </foreignObject>
+      <g transform="translate(72, 460)">
+        <rect width="132" height="34" rx="17" fill="rgba(255,255,255,0.14)" />
+        <text x="66" y="22" text-anchor="middle" font-size="16" fill="#f8fafc" font-family="Inter, Arial, sans-serif">Flex</text>
+      </g>
+      <g transform="translate(224, 460)">
+        <rect width="132" height="34" rx="17" fill="rgba(255,255,255,0.14)" />
+        <text x="66" y="22" text-anchor="middle" font-size="16" fill="#f8fafc" font-family="Inter, Arial, sans-serif">Layout</text>
+      </g>
+      <g transform="translate(376, 460)">
+        <rect width="132" height="34" rx="17" fill="rgba(255,255,255,0.14)" />
+        <text x="66" y="22" text-anchor="middle" font-size="16" fill="#f8fafc" font-family="Inter, Arial, sans-serif">Guide</text>
+      </g>
+  <text x="72" y="560" font-size="18" fill="rgba(248,250,252,0.72)" font-family="Inter, Arial, sans-serif">fridolph / my-program showcase</text>
+</svg>

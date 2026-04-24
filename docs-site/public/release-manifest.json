@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-04-24T14:57:53.490Z",
+  "site": {
+    "title": "My Program Demo Collection",
+    "siteUrl": "https://fridolph.github.io/my-program",
+    "repoBase": "/my-program"
+  },
+  "snapshot": {
+    "demos": 74,
+    "categories": 6,
+    "tags": 67,
+    "scenes": 24,
+    "difficultyBuckets": 3,
+    "quickStarts": 4,
+    "quickStartAudiences": 6,
+    "quickStartStages": 4,
+    "quickStartFollowUpTypes": 4,
+    "journalEntries": 26,
+    "featuredDemos": 8,
+    "routes": 241,
+    "pageOgImages": 242
+  },
+  "commands": [
+    "pnpm docs:generate",
+    "pnpm docs:build",
+    "pnpm docs:check"
+  ],
+  "releaseChecks": [
+    {
+      "label": "首页产物",
+      "path": "index.html"
+    },
+    {
+      "label": "sitemap",
+      "path": "sitemap.xml"
+    },
+    {
+      "label": "robots",
+      "path": "robots.txt"
+    },
+    {
+      "label": "manifest",
+      "path": "manifest.webmanifest"
+    },
+    {
+      "label": "发布快照",
+      "path": "release-manifest.json"
+    },
+    {
+      "label": "旧入口说明页",
+      "path": "views/index.html"
+    }
+  ],
+  "rollbackBaseline": [
+    "先确认本地 pnpm docs:check 是否通过。",
+    "再比对 release-manifest.json 中的关键统计与本次预期是否一致。",
+    "如果关键产物缺失，优先回看 workflow 校验与 generate 链路，而不是直接重新发布。",
+    "如需回滚，以最近一个已知通过的主分支提交重新触发发布。"
+  ],
+  "highlightedRoutes": [
+    "/",
+    "/guide/progress",
+    "/guide/release-status",
+    "/guide/deployment",
+    "/demos/css-animation/animation-js-loading-love",
+    "/journal/dao-m25-quick-start-overdoing-guardrails"
+  ]
+}
