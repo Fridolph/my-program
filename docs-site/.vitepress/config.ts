@@ -3,6 +3,54 @@ import { generatedSidebar } from './generated/demo-sidebar.mjs'
 import { pageOgImages } from './generated/page-seo.mjs'
 import { pageToRoutePath, siteMetadata, toAbsoluteAssetUrl, toPageUrl } from '../scripts/site-seo.mjs'
 
+type MarkdownHtmlToken = {
+  type: string
+  content?: string
+  children?: MarkdownHtmlToken[]
+}
+
+const siteBase = process.env.NODE_ENV === 'production' ? `${siteMetadata.repoBase}/` : '/'
+
+function withSiteBase(path: string) {
+  if (!path.startsWith('/') || path.startsWith('//')) {
+    return path
+  }
+
+  if (siteBase === '/') {
+    return path
+  }
+
+  const normalizedBase = siteBase.endsWith('/') ? siteBase.slice(0, -1) : siteBase
+
+  if (path === '/' || path.startsWith(`${normalizedBase}/`)) {
+    return path === '/' ? `${normalizedBase}/` : path
+  }
+
+  return `${normalizedBase}${path}`
+}
+
+function rewriteRawHtmlBase(content: string) {
+  return content
+    .replace(/(\b(?:href|src|poster)=["'])(\/(?!\/)[^"']*)(["'])/g, (_match, prefix, path, suffix) => {
+      return `${prefix}${withSiteBase(path)}${suffix}`
+    })
+    .replace(/(url\(["']?)(\/(?!\/)[^)"']*)(["']?\))/g, (_match, prefix, path, suffix) => {
+      return `${prefix}${withSiteBase(path)}${suffix}`
+    })
+}
+
+function rewriteHtmlTokens(tokens: MarkdownHtmlToken[] = []) {
+  for (const token of tokens) {
+    if ((token.type === 'html_block' || token.type === 'html_inline') && token.content) {
+      token.content = rewriteRawHtmlBase(token.content)
+    }
+
+    if (token.children?.length) {
+      rewriteHtmlTokens(token.children)
+    }
+  }
+}
+
 const guideSidebar = [
   {
     text: '项目指南',
@@ -93,8 +141,15 @@ export default defineConfig({
     ['meta', { property: 'og:site_name', content: siteMetadata.title }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['link', { rel: 'manifest', href: '/manifest.webmanifest' }]
+    ['link', { rel: 'manifest', href: withSiteBase('/manifest.webmanifest') }]
   ],
+  markdown: {
+    config(md) {
+      md.core.ruler.push('rewrite-raw-html-base', (state) => {
+        rewriteHtmlTokens(state.tokens as MarkdownHtmlToken[])
+      })
+    }
+  },
   sitemap: {
     hostname: `${siteMetadata.siteUrl}/`
   },
@@ -174,7 +229,7 @@ export default defineConfig({
     lastUpdated: true
   },
 
-  base: process.env.NODE_ENV === 'production' ? `${siteMetadata.repoBase}/` : '/',
+  base: siteBase,
 
   vite: {
     plugins: [
